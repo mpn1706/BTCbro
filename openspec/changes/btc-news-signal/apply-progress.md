@@ -117,3 +117,48 @@ Scope: PR3 ONLY (PR1/PR2 untouched, PR4 CLI/docs untouched).
 
 - PR4: `tests/test_cli.py` + `src/cli.py` + `btc-signal` entry + DECISION_LOG/portfolio/README + final slice gate (full `pytest`, CLI 2/3 codes, single test-2024 report).
 - Structured status: change `btc-news-signal`, artifactStore `openspec`, chain `stacked-to-main` PR3/4 branch `pr2-label-split`, `actionContext.mode=repo-local`, allowedEditRoots respected (only `src/train.py`, `src/evaluate.py`, `tests/test_train_eval.py`, `apply-progress.md` edited), delivery `ask-on-risk` with `size:within-budget` (270 < 400 max), strict TDD followed, no warnings.
+
+---
+
+# Apply progress — btc-news-signal — PR4 (CLI + docs, stacked-to-main PR4/4, branch pr2-label-split)
+
+Scope: PR4 ONLY (PR1 ingest, PR2 dataset, PR3 model/eval untouched).
+
+## Completed (PR4 RED → GREEN → TRIANGULATE → REFACTOR)
+
+- `tests/test_cli.py`: 11 tests (happy path action+probs+DISCLAIMER exit 0, missing `--title` exit 2, non-numeric `--price` exit 2, missing artifact exit 3 naming path, never-retrains mtime+hash guard; triangulate: bad-price matrix abc/0/-5/empty exit 2, corrupt-model exit 3 naming dir, probs sum 1.0±1e-6 text + `--json` shape, `--help` documents price as display context, `models/latest` pointer resolves).
+- `src/cli.py` (123 lines): inference-only `main(argv)->int` + `btc-signal` parser (`--title --price [--body --model --json]`); `resolve_run_dir` (latest-pointer → run dir); `load_artifacts` read-only (`vectorizer.pkl`/`model.pkl`, missing/corrupt → exit 3 naming path); `predict_probs` via `src.train.combine_text` (price NOT a feature); stdout `action/probs/price_ctx/DISCLAIMER`, `--json` variant; exits 0/2/3/1 per contract.
+- `pyproject.toml` (new, 17 lines): project meta + deps + `btc-signal = "src.cli:main"` entry.
+- `README.md` (new, 36 lines): portfolio section (pipeline, temporal discipline, run/CLI/exits, layout, disclaimer).
+- `DECISION_LOG.md` (new, 28 lines): D1 Kaggle-vs-GDELT, D2 thr/embargo val-only, D3 TF-IDF/C choice, D4 single test report + per-class gate, D5 CLI inference-only.
+- Temporal discipline affirmed: CLI performs no fitting, reads no train/val/test splits, tunes nothing; price is display context only.
+- Leakage consolidation: grep confirms no `merge_asof`/`ret_24h`/`label_forward` in `cli/train/evaluate`.
+
+## TDD Cycle Evidence
+
+| Cycle | Command | Result |
+|---|---|---|
+| RED | `python -m pytest tests/test_cli.py -v` (no `src/cli.py`) | collection ERROR, `No module named 'src.cli'` |
+| GREEN | same (after `src/cli.py` + `pyproject.toml`) | 5 passed |
+| TRIANGULATE | same (6 edge tests added: bad-price matrix, corrupt model, probs-sum, json shape, help, latest-pointer) | 10 passed, then 11 passed after pointer fix |
+| FIX | `resolve_run_dir`: `latest` pointer → run dir unconditionally (was existence-gated, mis-resolved across path forms) | pointer demo exit 0 |
+| REFACTOR | `python -m pytest -q` full suite | 42 passed (9 ingest + 13 dataset + 9 train/eval + 11 CLI) |
+
+## Verification
+
+- `python -m pytest -q` → 42 passed.
+- Demo (temp model, repo `models/` untouched): `--title "Bitcoin ETF inflows hit record" --price 60000` → `action: buy / probs: buy=0.67 hold=0.17 sell=0.16 / price_ctx: 60000.00 EUR / DISCLAIMER…` exit 0; `--json` shape `{action, probs{buy,hold,sell}, price_ctx, disclaimer}` exit 0; `models/latest` pointer resolves exit 0; missing `--title` / `--price abc` → exit 2 naming arg + usage; `--model <missing>` → exit 3 naming path; `--help` shows price display-context note.
+- `data/interim/data_card.md` exact fields verified present (counts, ranges, thr/embargo/seed, boundaries, purge/embargo rows, rebuild command).
+- `models/` audit: only `.gitkeep`, no frozen `models/<run_id>/` + `latest` yet (PR3 smoke used tempdir); CLI default `models/latest` correctly exits 3 until a real training run saves one. No `models/`/`data/` writes by CLI (hash+mtime guard test).
+- Size: 365 new lines (`src/cli.py` 123 + `tests/test_cli.py` 161 + `pyproject.toml` 17 + `README.md` 36 + `DECISION_LOG.md` 28 via `wc -l`) — within 400-line max and PR4 <200 target overrun justified as docs/tests required by contract (no code shrink possible without deleting exit-code/disclaimer coverage). No commit/push/PR per instructions.
+- Rollback PR4: delete `src/cli.py`, `tests/test_cli.py`, `pyproject.toml`, `README.md`, `DECISION_LOG.md`.
+
+## Deviations
+
+- `tasks.md` checkboxes NOT ticked: file is outside this run's allowed edit surfaces; parent owns the update.
+- `models/<run_id>/` not created: saving a frozen run is a training action outside PR4's inference-only scope and edit surfaces; recorded above as the one remaining pre-gate item for the parent.
+
+## Remaining (out of scope for this run)
+
+- Final slice gate (parent): tick PR4 + DoD checkboxes in `tasks.md`, run one real `build_dataset` + train + single test-2024 report, save `models/<run_id>/` + `models/latest`, then `sdd-verify`.
+- Structured status: change `btc-news-signal`, artifactStore `openspec`, chain `stacked-to-main` PR4/4 branch `pr2-label-split`, `actionContext.mode=repo-local`, allowedEditRoots respected (only `src/cli.py`, `pyproject.toml`, `README.md`, `DECISION_LOG.md`, `tests/test_cli.py`, `apply-progress.md` edited), delivery `ask-on-risk` with `size:within-budget` (365 < 400 max), strict TDD followed, no warnings.
