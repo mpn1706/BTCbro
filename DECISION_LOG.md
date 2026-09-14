@@ -26,3 +26,9 @@ Near-random + honest protocol = PASS.
 `btc-signal` loads `models/latest` read-only and never writes
 `data/`/`models/`. `--price` is display context, not a trained
 feature. Exits: 0 ok, 2 bad input, 3 missing/corrupt artifact, 1 internal.
+
+## D6 — PR2 size:exception accepted
+PR2 (dataset) landed at 472 new lines over the 400-line PR budget because
+threshold/split/purge tests and the data_card contract cannot be cut without
+losing guarantees. Accepted as `size:exception` under the approved 4-PR
+stacked chain; PR1/PR3/PR4 stayed within budget.
