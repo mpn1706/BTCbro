@@ -35,3 +35,46 @@ Scope: PR1 ONLY (PR2 dataset, PR3 model/eval, PR4 CLI untouched).
 
 - PR2: `tests/test_dataset.py` + `src/dataset.py` + card. PR3: train/eval. PR4: CLI/docs. Final slice gate.
 - Rollback PR1: delete `data/interim/news_clean.parquet`, `data/interim/prices_clean.parquet` (+ local `data/raw/` copies).
+
+---
+
+# Apply progress — btc-news-signal — PR2 (dataset, stacked-to-main PR2/4, branch pr2-label-split)
+
+Scope: PR2 ONLY (PR1 untouched, PR3 model/eval and PR4 CLI untouched).
+
+## Completed (PR2 RED → GREEN → TRIANGULATE → REFACTOR)
+
+- `tests/test_dataset.py`: 13 tests (asof-backward, future-candle-never-feature, buy 60000→60330 @0.005, hold 60000→60100 @0.005, thr configurable r=+0.008 hold @0.01/buy @0.005 + invalid-thr ValueError, temporal order, purge+embargo math T>B-24h-embargo absent + invalid-embargo ValueError, random-split forbidden, rebuild-reproducible + card exact-fields; triangulate: r==thr hold, sell mirror, embargo 2 vs 1 delta, news-before-first-candle dropped).
+- `src/dataset.py`: `DatasetConfig` (thr 0.005∈{0.003,0.005,0.01}, embargo 1∈{1,2}, split_mode temporal-only, seed 42, train_end/val_end overridable) + `join_asof_backward` (sorted merge_asof backward UTC, close_t24 via +1d lookup) + `label_forward` (ret_24h, strict > so r==thr holds, invalid thr ValueError naming allowed, drop+count, stamp flat_threshold) + `temporal_split` (train 2018-2022/val 2023/test 2024+ defaults, purge T>B-24h + embargo T>B-24h-embargo_days at both boundaries, purged_train_rows/embargoed_rows, embargo∈{1,2} else ValueError, split_mode!=temporal explicit failure) + `build_dataset` + data_card.md writer with exact contract fields + `models/<run_id>/data_card.md` copy hook + `python -m src.dataset` CLI.
+- Temporal discipline affirmed: train learns / val chooses / test locked / no test tuning (module docstring + val-only thr/embargo, single final test report deferred to PR3).
+- Leakage consolidation: `merge_asof`/`ret_24h`/label/split logic only in `src/dataset.py` (grep verified, no join/label in ingest/config).
+
+## TDD Cycle Evidence
+
+| Cycle | Command | Result |
+|---|---|---|
+| RED | `python -m pytest tests/test_dataset.py -v` (no src/dataset.py) | collection ERROR, `No module named 'src.dataset'` |
+| GREEN | same (after `src/dataset.py` + 1 fix: f-string `{{}}` → `dict()` for empty label dist) | 9 passed |
+| TRIANGULATE | `python -m pytest tests/test_ingest.py tests/test_dataset.py -v` (4 edge tests added) | 22 passed (9 ingest + 13 dataset) |
+| REFACTOR | same (no code change needed; grep confirms single-owner + docstring already enforces discipline) | 22 passed |
+
+## Verification
+
+- `python -m pytest tests/test_ingest.py tests/test_dataset.py -v` → 22 passed.
+- Fixture rebuild: `build_dataset(DatasetConfig(train_end="2024-01-17", val_end="2024-01-19"))` twice on `news_tiny`/`prices_tiny` → identical train/val/test frames + card contains `raw_news_rows, flat_threshold, embargo_days, seed, split boundaries, rebuild command, dropped_no_price, dropped_no_forward, purged_train_rows, embargoed_rows`.
+- Purge math asserted: train rows with `T > B-24h-embargo` absent; embargo=2 strictly removes more than embargo=1 on probe set; `split_mode="random"/"stratified-shuffle"` → ValueError naming chronological/temporal.
+- Size: 472 new lines (`src/dataset.py` 235 + `tests/test_dataset.py` 237 via `wc -l`) — exceeds 400-line max and 250-line PR2 target. Cannot shrink without deleting required tests/contract fields/docs (forbidden by budget rule); recommend `size:exception` for PR2 or accept stacked-PR boundary as-is. `src/dataset.py` alone 235 lines is within 400.
+- Rollback PR2: delete `src/dataset.py`, `tests/test_dataset.py`, `data/interim/data_card.md` (+ optional `models/<run_id>/data_card.md` copy).
+
+## Deviations
+
+- `build_dataset` accepts optional `news_df`/`prices_df` (default loads `data/interim/*.parquet`) to enable deterministic fixture rebuild tests; CLI `python -m src.dataset --flat-threshold X --embargo-days Y --seed N` satisfies reproduce command.
+- `dropped_no_price`/`dropped_no_forward` computed in `build_dataset` from join/label length deltas (label drops both classes); `purged_train_rows` = rows with `T>B-24h` across both boundaries, `embargoed_rows` = embargo-only strip `(B-24h-embargo, B-24h]`.
+- `tasks.md` checkboxes NOT ticked: file is outside this run's allowed edit surfaces; parent owns the update.
+- Generated `data/interim/data_card.md` left in working tree as build evidence (test side effect, not a source edit).
+
+## Remaining (out of scope for this run)
+
+- PR3: `tests/test_train_eval.py` + `src/train.py` + `src/evaluate.py` + run artifacts. PR4: CLI/docs/portfolio + final slice gate.
+- Structured status: change `btc-news-signal`, artifactStore `openspec`, chain `stacked-to-main` PR2/4, `actionContext.mode=repo-local`, allowedEditRoots respected (only `src/dataset.py`, `tests/test_dataset.py`, `apply-progress.md` edited), no warnings.
+
