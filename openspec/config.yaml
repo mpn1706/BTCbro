@@ -1,0 +1,10 @@
+project_name: bitcoin-news-classifier
+artifact_store: openspec
+execution_mode: interactive
+delivery_strategy: ask-on-risk
+review_budget_lines: 400
+strict_tdd: true
+test_runner: python -m pytest
+language: python
+python_version: "3.14.7"
+purpose: Educational small local model mapping BTC news headline plus BTC/EUR price to buy/sell/hold. No financial advice, no live trading.

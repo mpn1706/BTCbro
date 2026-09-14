@@ -1,0 +1,8 @@
+id,published_at,source,title,body,url
+n1,2024-01-15T12:00:00Z,CoinDesk,Bitcoin ETF inflows hit record,ETF bodies attract record flows.,https://example.com/etf-record
+n2,2024-01-16T12:00:00+01:00,CoinTelegraph,Bitcoin price rallies on ETF optimism,Second day rally body.,https://example.com/etf-rally
+n3,2024-01-17 12:00:00,CoinTelegraph,"  BITCOIN PRICE RALLIES ON etf OPTIMISM  ",Duplicate body with different case.,https://example.com/ETF-RALLY
+n4,2024-01-18T12:00:00Z,CoinDesk,Missing url row,This row has no url.,
+n5,2024-01-19T12:00:00Z,,Ethereum upgrade announced,Eth body text.,https://example.com/eth-upgrade
+n6,2024-01-20 15:30:00,El Pais,El precio de Bitcoin sube con fuerza,Texto en español sobre bitcoin.,https://example.com/btc-sube
+n7,2024-01-21T08:00:00Z,CoinDesk,Bitcoin holds steady above 60000,Holds body text.,https://example.com/btc-holds

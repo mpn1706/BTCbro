@@ -1,0 +1,20 @@
+# Local Pi runtime state
+.atl/
+.pi/
+
+# Data payloads (never commit real data, only card + metrics)
+data/raw/
+data/clean/
+data/proc/
+data/interim/*.parquet
+data/interim/*.csv
+
+# Model binaries (only .gitkeep + card/metrics via run folders, no blind weights)
+models/*
+!models/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
