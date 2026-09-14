@@ -78,3 +78,42 @@ Scope: PR2 ONLY (PR1 untouched, PR3 model/eval and PR4 CLI untouched).
 - PR3: `tests/test_train_eval.py` + `src/train.py` + `src/evaluate.py` + run artifacts. PR4: CLI/docs/portfolio + final slice gate.
 - Structured status: change `btc-news-signal`, artifactStore `openspec`, chain `stacked-to-main` PR2/4, `actionContext.mode=repo-local`, allowedEditRoots respected (only `src/dataset.py`, `tests/test_dataset.py`, `apply-progress.md` edited), no warnings.
 
+---
+
+# Apply progress — btc-news-signal — PR3 (model+eval, stacked-to-main PR3/4, branch pr2-label-split)
+
+Scope: PR3 ONLY (PR1/PR2 untouched, PR4 CLI/docs untouched).
+
+## Completed (PR3 RED → GREEN → TRIANGULATE → REFACTOR)
+
+- `tests/test_train_eval.py`: 9 tests (balanced weights + SEED/max_iter/solver contract, TF-IDF max_features 5k–20k + ngram(1,2) + sublinear + invalid-max_features ValueError, seed reproducibility via coef_ + predict equality, train-fits-train-only vocab guard, combine_text title+body, eval per-class P/R + macro-F1 + 3x3 matrix + gate pass; triangulate: hold-dominance eval, single-class val fold macro_F1≈1/3).
+- `src/train.py` (84 lines): `combine_text`/`texts_from_df` (title+body, price NOT a feature) + `make_vectorizer` (5k–20k validated, ngram (1,2), sublinear True) + `train_baseline` (TF-IDF fit on train texts only + LogisticRegression balanced/random_state=SEED/max_iter=1000/solver=lbfgs/C) + `make_run_id` (YYYYMMDD-HHMMSS-seedN-thrX-embY) + `save_run` (models/<run_id>/{vectorizer.pkl, model.pkl, config.json, metrics.json} + models/latest pointer).
+- `src/evaluate.py` (64 lines): `evaluate_predictions` (per-class precision/recall/F1/support via zero_division=0, macro-F1, accuracy alongside only, 3x3 confusion matrix rows=true cols=pred order buy/hold/sell) + `check_report_complete` (accuracy-alone → ValueError naming per-class + confusion matrix; non-3x3 or missing buy/hold/sell → ValueError) + near-random+honest=PASS rule in docstring.
+- Temporal discipline affirmed: vectorizer+model fit on train only (val-only-token vocab test), val-2023 chooses thr/embargo/TFIDF/C by macro-F1 (evaluate_predictions), single final test-2024 report deferred (no test read in PR3), no leakage logic outside `src/dataset.py` (grep verified: no merge_asof/ret_24h in train/evaluate).
+
+## TDD Cycle Evidence
+
+| Cycle | Command | Result |
+|---|---|---|
+| RED | `python -m pytest tests/test_train_eval.py -v` (no src/train.py/src/evaluate.py) | collection ERROR, `No module named 'src.evaluate'` |
+| GREEN | same (after `src/train.py` + `src/evaluate.py` + 1 fix: texts_from_df `[\"\"]*len` typo) | 9 passed |
+| TRIANGULATE | `python -m pytest tests/test_ingest.py tests/test_dataset.py tests/test_train_eval.py -v` (hold-dominance + single-class fold verified, no code change) | 31 passed (9 ingest + 13 dataset + 9 train/eval) |
+| REFACTOR | same (no duplication to remove; train vs eval concerns separated; grep confirms leakage code only in dataset.py) | 31 passed |
+
+## Verification
+
+- `python -m pytest tests/test_ingest.py tests/test_dataset.py tests/test_train_eval.py -v` → 31 passed.
+- Smoke (tempdir, no repo pollution): toy 12-row fit → preds [buy, hold] sane, macro_F1 1.0 on separable toy, `save_run` writes {vectorizer.pkl, model.pkl, config.json, metrics.json} + `models/latest` pointer resolves to run_id `YYYYMMDD-HHMMSS-seed42-thr0.005-emb1`.
+- Size: 270 new lines (`src/train.py` 84 + `src/evaluate.py` 64 + `tests/test_train_eval.py` 122 via `wc -l`) — over PR3 <250 target by 20 lines but within 400-line max; cannot shrink without deleting required contract tests/guards (forbidden by budget rule). No commit/push/PR per instructions.
+- Rollback PR3: delete `src/train.py`, `src/evaluate.py`, `tests/test_train_eval.py` (+ optional `models/<run_id>/` + `models/latest` if a real run was saved; smoke used tempdir so none created).
+
+## Deviations
+
+- `tasks.md` checkboxes NOT ticked: file is outside this run's allowed edit surfaces; parent owns the update.
+- `DECISION_LOG.md` NOT appended: file is outside allowed edit surfaces; val-loop choice (thr/embargo/TFIDF/C by macro-F1) is implemented via `train_baseline` + `evaluate_predictions` return values ready for the parent/PR4 logging step. No test-peeking: PR3 performs no test-2024 read.
+- Deps installed into environment: `scikit-learn 1.9.1, scipy, joblib` (were absent; `numpy/pandas/pytest` already present). No `pyproject.toml` touched (absent from repo; PR4 owns packaging).
+
+## Remaining (out of scope for this run)
+
+- PR4: `tests/test_cli.py` + `src/cli.py` + `btc-signal` entry + DECISION_LOG/portfolio/README + final slice gate (full `pytest`, CLI 2/3 codes, single test-2024 report).
+- Structured status: change `btc-news-signal`, artifactStore `openspec`, chain `stacked-to-main` PR3/4 branch `pr2-label-split`, `actionContext.mode=repo-local`, allowedEditRoots respected (only `src/train.py`, `src/evaluate.py`, `tests/test_train_eval.py`, `apply-progress.md` edited), delivery `ask-on-risk` with `size:within-budget` (270 < 400 max), strict TDD followed, no warnings.
