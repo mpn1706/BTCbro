@@ -1,0 +1,3865 @@
+{
+ "curves_1_0": {
+  "HODL": [
+   1.0,
+   0.963846,
+   0.975009,
+   1.067164,
+   1.13079,
+   1.125906,
+   1.173083,
+   1.175616,
+   1.169378,
+   1.173366,
+   1.292112,
+   1.414779,
+   1.54664,
+   1.444123,
+   1.51484,
+   1.550454,
+   1.562244,
+   1.632505,
+   1.61796,
+   1.616043,
+   1.570936,
+   1.478389,
+   1.548003,
+   1.528944,
+   1.401379,
+   1.537207,
+   1.48238,
+   1.443615,
+   1.450031,
+   1.521827,
+   1.583499,
+   1.584156,
+   1.572103,
+   1.601293,
+   1.582005,
+   1.576402,
+   1.614618,
+   1.577689,
+   1.481374,
+   1.493458,
+   1.550679,
+   1.535487,
+   1.559445,
+   1.570003,
+   1.621356,
+   1.564943,
+   1.597737,
+   1.585803,
+   1.52096,
+   1.444582,
+   1.487978,
+   1.435635,
+   1.444364,
+   1.386981,
+   1.437594,
+   1.445082,
+   1.471131,
+   1.469597,
+   1.512853,
+   1.503111,
+   1.45489,
+   1.459526,
+   1.443084,
+   1.435475,
+   1.428551,
+   1.445026,
+   1.372499,
+   1.318564,
+   1.338243,
+   1.423494,
+   1.446166,
+   1.449327,
+   1.429654,
+   1.410932,
+   1.384972,
+   1.529774,
+   1.492255,
+   1.47968,
+   1.537171,
+   1.534936,
+   1.512451,
+   1.498442,
+   1.462639,
+   1.479349,
+   1.390113,
+   1.222082,
+   1.268321,
+   1.245532,
+   1.396792,
+   1.378005,
+   1.343473,
+   1.371881,
+   1.329502,
+   1.302857,
+   1.346618,
+   1.384684,
+   1.366728,
+   1.34686,
+   1.336074,
+   1.344235,
+   1.338153,
+   1.334768,
+   1.297547,
+   1.337995,
+   1.299936,
+   1.31217,
+   1.271177,
+   1.221115,
+   1.225437,
+   1.241324,
+   1.290622,
+   1.304863,
+   1.297947,
+   1.315689
+  ],
+  "baseline": [
+   1.0,
+   0.963846,
+   0.975009,
+   0.975009,
+   0.975009,
+   0.975009,
+   0.975009,
+   0.975009,
+   0.975009,
+   0.975009,
+   0.975009,
+   0.975009,
+   0.975009,
+   0.975009,
+   1.022755,
+   1.022755,
+   1.030532,
+   1.030532,
+   1.030532,
+   1.030532,
+   1.030532,
+   1.030532,
+   1.030532,
+   1.030532,
+   0.944551,
+   1.036102,
+   1.036102,
+   1.036102,
+   1.036102,
+   1.036102,
+   1.036102,
+   1.036102,
+   1.028219,
+   1.04731,
+   1.04731,
+   1.043601,
+   1.0689,
+   1.044453,
+   0.980691,
+   0.980691,
+   1.018266,
+   1.00829,
+   1.00829,
+   1.00829,
+   1.00829,
+   0.973207,
+   0.973207,
+   0.973207,
+   0.973207,
+   0.924335,
+   0.952103,
+   0.952103,
+   0.952103,
+   0.952103,
+   0.952103,
+   0.957062,
+   0.974315,
+   0.974315,
+   0.974315,
+   0.974315,
+   0.974315,
+   0.977419,
+   0.966409,
+   0.961313,
+   0.956676,
+   0.967709,
+   0.967709,
+   0.967709,
+   0.982152,
+   1.044719,
+   1.044719,
+   1.047003,
+   1.047003,
+   1.033292,
+   1.033292,
+   1.033292,
+   1.007949,
+   1.007949,
+   1.007949,
+   1.007949,
+   0.993184,
+   0.993184,
+   0.969453,
+   0.969453,
+   0.969453,
+   0.852269,
+   0.852269,
+   0.852269,
+   0.955771,
+   0.942916,
+   0.919287,
+   0.919287,
+   0.890889,
+   0.873035,
+   0.902359,
+   0.927866,
+   0.927866,
+   0.914378,
+   0.907055,
+   0.907055,
+   0.902951,
+   0.900667,
+   0.875551,
+   0.875551,
+   0.875551,
+   0.875551,
+   0.875551,
+   0.875551,
+   0.87865,
+   0.890041,
+   0.890041,
+   0.890041,
+   0.890041,
+   0.890041
+  ],
+  "llm": [
+   1.0,
+   0.963846,
+   0.975009,
+   1.067164,
+   1.13079,
+   1.125906,
+   1.173083,
+   1.175616,
+   1.169378,
+   1.173366,
+   1.173366,
+   1.28476,
+   1.404502,
+   1.311407,
+   1.375625,
+   1.407966,
+   1.418673,
+   1.482476,
+   1.469268,
+   1.467527,
+   1.426566,
+   1.342524,
+   1.40574,
+   1.40574,
+   1.288454,
+   1.413337,
+   1.362928,
+   1.327286,
+   1.333185,
+   1.333185,
+   1.387212,
+   1.387787,
+   1.387787,
+   1.413555,
+   1.396529,
+   1.391583,
+   1.425318,
+   1.425318,
+   1.338305,
+   1.349221,
+   1.349221,
+   1.336003,
+   1.356848,
+   1.366034,
+   1.410717,
+   1.361632,
+   1.390166,
+   1.379782,
+   1.323363,
+   1.256908,
+   1.256908,
+   1.212693,
+   1.220067,
+   1.171595,
+   1.214348,
+   1.220673,
+   1.242677,
+   1.241381,
+   1.277919,
+   1.26969,
+   1.228958,
+   1.232874,
+   1.218986,
+   1.212558,
+   1.206709,
+   1.220626,
+   1.220626,
+   1.172659,
+   1.172659,
+   1.247362,
+   1.247362,
+   1.247362,
+   1.247362,
+   1.231028,
+   1.231028,
+   1.231028,
+   1.200836,
+   1.190717,
+   1.23698,
+   1.235182,
+   1.217087,
+   1.205814,
+   1.177003,
+   1.19045,
+   1.118641,
+   0.983424,
+   0.983424,
+   0.983424,
+   0.983424,
+   0.983424,
+   0.983424,
+   0.983424,
+   0.983424,
+   0.983424,
+   0.983424,
+   0.983424,
+   0.983424,
+   0.969128,
+   0.961367,
+   0.961367,
+   0.961367,
+   0.961367,
+   0.961367,
+   0.961367,
+   0.934021,
+   0.942812,
+   0.913358,
+   0.877388,
+   0.880493,
+   0.891908,
+   0.927329,
+   0.927329,
+   0.922414,
+   0.922414
+  ]
+ },
+ "days": [
+  "2024-01-04",
+  "2024-01-31",
+  "2024-02-01",
+  "2024-02-09",
+  "2024-02-12",
+  "2024-02-13",
+  "2024-02-14",
+  "2024-02-15",
+  "2024-02-17",
+  "2024-02-21",
+  "2024-02-27",
+  "2024-02-28",
+  "2024-03-04",
+  "2024-03-05",
+  "2024-03-07",
+  "2024-03-09",
+  "2024-03-10",
+  "2024-03-11",
+  "2024-03-12",
+  "2024-03-14",
+  "2024-03-15",
+  "2024-03-16",
+  "2024-03-17",
+  "2024-03-18",
+  "2024-03-19",
+  "2024-03-20",
+  "2024-03-21",
+  "2024-03-22",
+  "2024-03-23",
+  "2024-03-24",
+  "2024-03-25",
+  "2024-03-26",
+  "2024-03-27",
+  "2024-03-28",
+  "2024-03-29",
+  "2024-03-30",
+  "2024-03-31",
+  "2024-04-01",
+  "2024-04-02",
+  "2024-04-03",
+  "2024-04-04",
+  "2024-04-05",
+  "2024-04-06",
+  "2024-04-07",
+  "2024-04-08",
+  "2024-04-09",
+  "2024-04-10",
+  "2024-04-11",
+  "2024-04-12",
+  "2024-04-13",
+  "2024-04-14",
+  "2024-04-15",
+  "2024-04-16",
+  "2024-04-17",
+  "2024-04-18",
+  "2024-04-19",
+  "2024-04-20",
+  "2024-04-21",
+  "2024-04-22",
+  "2024-04-23",
+  "2024-04-24",
+  "2024-04-25",
+  "2024-04-26",
+  "2024-04-27",
+  "2024-04-28",
+  "2024-04-29",
+  "2024-04-30",
+  "2024-05-01",
+  "2024-05-02",
+  "2024-05-03",
+  "2024-05-04",
+  "2024-05-05",
+  "2024-05-06",
+  "2024-05-07",
+  "2024-05-08",
+  "2024-07-22",
+  "2024-07-23",
+  "2024-07-24",
+  "2024-07-26",
+  "2024-07-27",
+  "2024-07-29",
+  "2024-07-30",
+  "2024-07-31",
+  "2024-08-01",
+  "2024-08-02",
+  "2024-08-05",
+  "2024-08-06",
+  "2024-08-07",
+  "2024-08-08",
+  "2024-08-09",
+  "2024-08-12",
+  "2024-08-13",
+  "2024-08-14",
+  "2024-08-15",
+  "2024-08-19",
+  "2024-08-21",
+  "2024-08-22",
+  "2024-08-27",
+  "2024-08-28",
+  "2024-08-29",
+  "2024-08-30",
+  "2024-08-31",
+  "2024-09-01",
+  "2024-09-02",
+  "2024-09-03",
+  "2024-09-04",
+  "2024-09-05",
+  "2024-09-06",
+  "2024-09-07",
+  "2024-09-08",
+  "2024-09-09",
+  "2024-09-10",
+  "2024-09-11",
+  "2024-09-12"
+ ],
+ "meta": {
+  "f1": {
+   "baseline": 0.316,
+   "llm": 0.283
+  },
+  "ft_status": "pendiente (requiere GPU)",
+  "n_test": 334,
+  "per_class": {
+   "baseline": {
+    "buy": 0.316,
+    "hold": 0.19,
+    "sell": 0.442
+   },
+   "llm": {
+    "buy": 0.455,
+    "hold": 0.167,
+    "sell": 0.227
+   }
+  },
+  "prompt_version": "v2",
+  "sampling": "systematic_step_4 (n=334)",
+  "window": "2024-01-04 \u2192 2024-09-12"
+ },
+ "ohlc": [
+  {
+   "c": 44179.9,
+   "d": "2024-01-04",
+   "h": 44770.0,
+   "l": 42675.2,
+   "o": 42855.8
+  },
+  {
+   "c": 42582.6,
+   "d": "2024-01-31",
+   "h": 43717.4,
+   "l": 42298.9,
+   "o": 42946.2
+  },
+  {
+   "c": 43075.8,
+   "d": "2024-02-01",
+   "h": 43243.2,
+   "l": 41879.2,
+   "o": 42569.8
+  },
+  {
+   "c": 47147.2,
+   "d": "2024-02-09",
+   "h": 48152.5,
+   "l": 45260.8,
+   "o": 45297.4
+  },
+  {
+   "c": 49958.2,
+   "d": "2024-02-12",
+   "h": 50280.5,
+   "l": 47745.8,
+   "o": 48296.4
+  },
+  {
+   "c": 49742.4,
+   "d": "2024-02-13",
+   "h": 50358.4,
+   "l": 48406.5,
+   "o": 49941.4
+  },
+  {
+   "c": 51826.7,
+   "d": "2024-02-14",
+   "h": 52021.4,
+   "l": 49296.8,
+   "o": 49733.4
+  },
+  {
+   "c": 51938.6,
+   "d": "2024-02-15",
+   "h": 52820.1,
+   "l": 51371.6,
+   "o": 51836.8
+  },
+  {
+   "c": 51663.0,
+   "d": "2024-02-17",
+   "h": 52191.9,
+   "l": 50669.7,
+   "o": 52161.7
+  },
+  {
+   "c": 51839.2,
+   "d": "2024-02-21",
+   "h": 52368.8,
+   "l": 50671.8,
+   "o": 52273.5
+  },
+  {
+   "c": 57085.4,
+   "d": "2024-02-27",
+   "h": 57537.8,
+   "l": 54484.2,
+   "o": 54519.4
+  },
+  {
+   "c": 62504.8,
+   "d": "2024-02-28",
+   "h": 63913.1,
+   "l": 56738.4,
+   "o": 57071.1
+  },
+  {
+   "c": 68330.4,
+   "d": "2024-03-04",
+   "h": 68537.0,
+   "l": 62386.5,
+   "o": 63137.0
+  },
+  {
+   "c": 63801.2,
+   "d": "2024-03-05",
+   "h": 69170.6,
+   "l": 59323.9,
+   "o": 68341.1
+  },
+  {
+   "c": 66925.5,
+   "d": "2024-03-07",
+   "h": 68029.9,
+   "l": 65655.5,
+   "o": 66099.7
+  },
+  {
+   "c": 68498.9,
+   "d": "2024-03-09",
+   "h": 68673.1,
+   "l": 68053.1,
+   "o": 68299.3
+  },
+  {
+   "c": 69019.8,
+   "d": "2024-03-10",
+   "h": 70005.2,
+   "l": 68240.0,
+   "o": 68500.3
+  },
+  {
+   "c": 72123.9,
+   "d": "2024-03-11",
+   "h": 72850.7,
+   "l": 67194.9,
+   "o": 69020.5
+  },
+  {
+   "c": 71481.3,
+   "d": "2024-03-12",
+   "h": 72825.7,
+   "l": 68728.9,
+   "o": 72125.1
+  },
+  {
+   "c": 71396.6,
+   "d": "2024-03-14",
+   "h": 73750.1,
+   "l": 68563.0,
+   "o": 73079.4
+  },
+  {
+   "c": 69403.8,
+   "d": "2024-03-15",
+   "h": 72357.1,
+   "l": 65630.7,
+   "o": 71387.9
+  },
+  {
+   "c": 65315.1,
+   "d": "2024-03-16",
+   "h": 70046.3,
+   "l": 64801.4,
+   "o": 69392.5
+  },
+  {
+   "c": 68390.6,
+   "d": "2024-03-17",
+   "h": 68845.7,
+   "l": 64545.3,
+   "o": 65316.3
+  },
+  {
+   "c": 67548.6,
+   "d": "2024-03-18",
+   "h": 68897.1,
+   "l": 66594.2,
+   "o": 68371.3
+  },
+  {
+   "c": 61912.8,
+   "d": "2024-03-19",
+   "h": 68106.9,
+   "l": 61536.2,
+   "o": 67556.1
+  },
+  {
+   "c": 67913.671875,
+   "d": "2024-03-20",
+   "h": 68115.257812,
+   "l": 60807.785156,
+   "o": 61930.15625
+  },
+  {
+   "c": 65491.390625,
+   "d": "2024-03-21",
+   "h": 68199.992188,
+   "l": 64580.917969,
+   "o": 67911.585938
+  },
+  {
+   "c": 63778.761719,
+   "d": "2024-03-22",
+   "h": 66623.75,
+   "l": 62355.371094,
+   "o": 65489.929688
+  },
+  {
+   "c": 64062.203125,
+   "d": "2024-03-23",
+   "h": 65976.398438,
+   "l": 63038.492188,
+   "o": 63802.722656
+  },
+  {
+   "c": 67234.171875,
+   "d": "2024-03-24",
+   "h": 67622.757812,
+   "l": 63825.851562,
+   "o": 64070.753906
+  },
+  {
+   "c": 69958.8125,
+   "d": "2024-03-25",
+   "h": 71162.59375,
+   "l": 66414.835938,
+   "o": 67234.09375
+  },
+  {
+   "c": 69987.835938,
+   "d": "2024-03-26",
+   "h": 71535.742188,
+   "l": 69335.609375,
+   "o": 69931.328125
+  },
+  {
+   "c": 69455.34375,
+   "d": "2024-03-27",
+   "h": 71727.6875,
+   "l": 68381.929688,
+   "o": 69991.898438
+  },
+  {
+   "c": 70744.953125,
+   "d": "2024-03-28",
+   "h": 71546.023438,
+   "l": 68895.507812,
+   "o": 69452.773438
+  },
+  {
+   "c": 69892.828125,
+   "d": "2024-03-29",
+   "h": 70913.09375,
+   "l": 69076.65625,
+   "o": 70744.796875
+  },
+  {
+   "c": 69645.304688,
+   "d": "2024-03-30",
+   "h": 70355.492188,
+   "l": 69601.0625,
+   "o": 69893.445312
+  },
+  {
+   "c": 71333.648438,
+   "d": "2024-03-31",
+   "h": 71377.78125,
+   "l": 69624.867188,
+   "o": 69647.78125
+  },
+  {
+   "c": 69702.148438,
+   "d": "2024-04-01",
+   "h": 71342.09375,
+   "l": 68110.695312,
+   "o": 71333.484375
+  },
+  {
+   "c": 65446.972656,
+   "d": "2024-04-02",
+   "h": 69708.382812,
+   "l": 64586.59375,
+   "o": 69705.023438
+  },
+  {
+   "c": 65980.8125,
+   "d": "2024-04-03",
+   "h": 66914.320312,
+   "l": 64559.898438,
+   "o": 65446.671875
+  },
+  {
+   "c": 68508.84375,
+   "d": "2024-04-04",
+   "h": 69291.257812,
+   "l": 65113.796875,
+   "o": 65975.695312
+  },
+  {
+   "c": 67837.640625,
+   "d": "2024-04-05",
+   "h": 68725.757812,
+   "l": 66011.476562,
+   "o": 68515.757812
+  },
+  {
+   "c": 68896.109375,
+   "d": "2024-04-06",
+   "h": 69629.601562,
+   "l": 67491.71875,
+   "o": 67840.570312
+  },
+  {
+   "c": 69362.554688,
+   "d": "2024-04-07",
+   "h": 70284.429688,
+   "l": 68851.632812,
+   "o": 68897.109375
+  },
+  {
+   "c": 71631.359375,
+   "d": "2024-04-08",
+   "h": 72715.359375,
+   "l": 69064.242188,
+   "o": 69362.554688
+  },
+  {
+   "c": 69139.015625,
+   "d": "2024-04-09",
+   "h": 71742.507812,
+   "l": 68212.921875,
+   "o": 71632.5
+  },
+  {
+   "c": 70587.882812,
+   "d": "2024-04-10",
+   "h": 71093.429688,
+   "l": 67503.5625,
+   "o": 69140.242188
+  },
+  {
+   "c": 70060.609375,
+   "d": "2024-04-11",
+   "h": 71256.234375,
+   "l": 69571.8125,
+   "o": 70575.734375
+  },
+  {
+   "c": 67195.867188,
+   "d": "2024-04-12",
+   "h": 71222.742188,
+   "l": 65254.835938,
+   "o": 70061.382812
+  },
+  {
+   "c": 63821.472656,
+   "d": "2024-04-13",
+   "h": 67931.429688,
+   "l": 60919.105469,
+   "o": 67188.375
+  },
+  {
+   "c": 65738.726562,
+   "d": "2024-04-14",
+   "h": 65824.429688,
+   "l": 62205.851562,
+   "o": 63836.230469
+  },
+  {
+   "c": 63426.210938,
+   "d": "2024-04-15",
+   "h": 66878.648438,
+   "l": 62332.070312,
+   "o": 65739.648438
+  },
+  {
+   "c": 63811.863281,
+   "d": "2024-04-16",
+   "h": 64355.667969,
+   "l": 61716.402344,
+   "o": 63419.296875
+  },
+  {
+   "c": 61276.691406,
+   "d": "2024-04-17",
+   "h": 64486.363281,
+   "l": 59768.585938,
+   "o": 63831.847656
+  },
+  {
+   "c": 63512.753906,
+   "d": "2024-04-18",
+   "h": 64125.6875,
+   "l": 60833.480469,
+   "o": 61275.316406
+  },
+  {
+   "c": 63843.570312,
+   "d": "2024-04-19",
+   "h": 65481.597656,
+   "l": 59651.390625,
+   "o": 63510.75
+  },
+  {
+   "c": 64994.441406,
+   "d": "2024-04-20",
+   "h": 65442.457031,
+   "l": 63172.402344,
+   "o": 63851.101562
+  },
+  {
+   "c": 64926.644531,
+   "d": "2024-04-21",
+   "h": 65723.242188,
+   "l": 64277.722656,
+   "o": 64992.816406
+  },
+  {
+   "c": 66837.679688,
+   "d": "2024-04-22",
+   "h": 67233.960938,
+   "l": 64548.179688,
+   "o": 64935.632812
+  },
+  {
+   "c": 66407.273438,
+   "d": "2024-04-23",
+   "h": 67199.242188,
+   "l": 65864.867188,
+   "o": 66839.890625
+  },
+  {
+   "c": 64276.898438,
+   "d": "2024-04-24",
+   "h": 67075.367188,
+   "l": 63589.871094,
+   "o": 66408.71875
+  },
+  {
+   "c": 64481.707031,
+   "d": "2024-04-25",
+   "h": 65275.207031,
+   "l": 62783.632812,
+   "o": 64275.019531
+  },
+  {
+   "c": 63755.320312,
+   "d": "2024-04-26",
+   "h": 64789.65625,
+   "l": 63322.398438,
+   "o": 64485.371094
+  },
+  {
+   "c": 63419.140625,
+   "d": "2024-04-27",
+   "h": 63898.363281,
+   "l": 62424.71875,
+   "o": 63750.988281
+  },
+  {
+   "c": 63113.230469,
+   "d": "2024-04-28",
+   "h": 64321.484375,
+   "l": 62793.597656,
+   "o": 63423.515625
+  },
+  {
+   "c": 63841.121094,
+   "d": "2024-04-29",
+   "h": 64174.878906,
+   "l": 61795.457031,
+   "o": 63106.363281
+  },
+  {
+   "c": 60636.855469,
+   "d": "2024-04-30",
+   "h": 64703.332031,
+   "l": 59120.066406,
+   "o": 63839.417969
+  },
+  {
+   "c": 58254.011719,
+   "d": "2024-05-01",
+   "h": 60780.5,
+   "l": 56555.292969,
+   "o": 60609.496094
+  },
+  {
+   "c": 59123.433594,
+   "d": "2024-05-02",
+   "h": 59602.296875,
+   "l": 56937.203125,
+   "o": 58253.703125
+  },
+  {
+   "c": 62889.835938,
+   "d": "2024-05-03",
+   "h": 63320.503906,
+   "l": 58848.3125,
+   "o": 59122.300781
+  },
+  {
+   "c": 63891.472656,
+   "d": "2024-05-04",
+   "h": 64494.957031,
+   "l": 62599.351562,
+   "o": 62891.03125
+  },
+  {
+   "c": 64031.132812,
+   "d": "2024-05-05",
+   "h": 64610.890625,
+   "l": 62955.304688,
+   "o": 63892.453125
+  },
+  {
+   "c": 63161.949219,
+   "d": "2024-05-06",
+   "h": 65494.902344,
+   "l": 62746.238281,
+   "o": 64038.3125
+  },
+  {
+   "c": 62334.816406,
+   "d": "2024-05-07",
+   "h": 64390.457031,
+   "l": 62285.980469,
+   "o": 63162.761719
+  },
+  {
+   "c": 61187.941406,
+   "d": "2024-05-08",
+   "h": 62986.085938,
+   "l": 60877.128906,
+   "o": 62332.640625
+  },
+  {
+   "c": 67585.25,
+   "d": "2024-07-22",
+   "h": 68480.0625,
+   "l": 66611.296875,
+   "o": 68152.976562
+  },
+  {
+   "c": 65927.671875,
+   "d": "2024-07-23",
+   "h": 67779.015625,
+   "l": 65484.460938,
+   "o": 67584.804688
+  },
+  {
+   "c": 65372.132812,
+   "d": "2024-07-24",
+   "h": 67113.984375,
+   "l": 65146.996094,
+   "o": 65927.859375
+  },
+  {
+   "c": 67912.0625,
+   "d": "2024-07-26",
+   "h": 68207.601562,
+   "l": 65743.765625,
+   "o": 65771.8125
+  },
+  {
+   "c": 67813.335938,
+   "d": "2024-07-27",
+   "h": 69398.507812,
+   "l": 66705.21875,
+   "o": 67911.8125
+  },
+  {
+   "c": 66819.914062,
+   "d": "2024-07-29",
+   "h": 69987.539062,
+   "l": 66532.59375,
+   "o": 68259.054688
+  },
+  {
+   "c": 66201.015625,
+   "d": "2024-07-30",
+   "h": 66987.671875,
+   "l": 65323.191406,
+   "o": 66819.054688
+  },
+  {
+   "c": 64619.25,
+   "d": "2024-07-31",
+   "h": 66810.210938,
+   "l": 64532.046875,
+   "o": 66201.273438
+  },
+  {
+   "c": 65357.5,
+   "d": "2024-08-01",
+   "h": 65593.242188,
+   "l": 62248.941406,
+   "o": 64625.839844
+  },
+  {
+   "c": 61415.066406,
+   "d": "2024-08-02",
+   "h": 65523.222656,
+   "l": 61184.894531,
+   "o": 65353.5
+  },
+  {
+   "c": 53991.457031,
+   "d": "2024-08-05",
+   "h": 58268.828125,
+   "l": 49121.238281,
+   "o": 58110.296875
+  },
+  {
+   "c": 56034.316406,
+   "d": "2024-08-06",
+   "h": 57059.917969,
+   "l": 53973.273438,
+   "o": 53991.347656
+  },
+  {
+   "c": 55027.460938,
+   "d": "2024-08-07",
+   "h": 57726.882812,
+   "l": 54620.507812,
+   "o": 56040.632812
+  },
+  {
+   "c": 61710.136719,
+   "d": "2024-08-08",
+   "h": 62673.765625,
+   "l": 54766.726562,
+   "o": 55030.027344
+  },
+  {
+   "c": 60880.113281,
+   "d": "2024-08-09",
+   "h": 61751.863281,
+   "l": 59587.859375,
+   "o": 61728.207031
+  },
+  {
+   "c": 59354.515625,
+   "d": "2024-08-12",
+   "h": 60680.332031,
+   "l": 57688.898438,
+   "o": 58719.394531
+  },
+  {
+   "c": 60609.566406,
+   "d": "2024-08-13",
+   "h": 61572.398438,
+   "l": 58506.253906,
+   "o": 59356.207031
+  },
+  {
+   "c": 58737.269531,
+   "d": "2024-08-14",
+   "h": 61687.757812,
+   "l": 58472.875,
+   "o": 60611.050781
+  },
+  {
+   "c": 57560.097656,
+   "d": "2024-08-15",
+   "h": 59838.648438,
+   "l": 56161.59375,
+   "o": 58733.261719
+  },
+  {
+   "c": 59493.453125,
+   "d": "2024-08-19",
+   "h": 59612.660156,
+   "l": 57864.710938,
+   "o": 58480.710938
+  },
+  {
+   "c": 61175.191406,
+   "d": "2024-08-21",
+   "h": 61834.351562,
+   "l": 58823.445312,
+   "o": 59014.988281
+  },
+  {
+   "c": 60381.914062,
+   "d": "2024-08-22",
+   "h": 61408.109375,
+   "l": 59815.253906,
+   "o": 61168.316406
+  },
+  {
+   "c": 59504.132812,
+   "d": "2024-08-27",
+   "h": 63210.796875,
+   "l": 58116.75,
+   "o": 62879.707031
+  },
+  {
+   "c": 59027.625,
+   "d": "2024-08-28",
+   "h": 60236.449219,
+   "l": 57890.675781,
+   "o": 59507.925781
+  },
+  {
+   "c": 59388.179688,
+   "d": "2024-08-29",
+   "h": 61184.082031,
+   "l": 58786.226562,
+   "o": 59027.46875
+  },
+  {
+   "c": 59119.476562,
+   "d": "2024-08-30",
+   "h": 59896.886719,
+   "l": 57768.53125,
+   "o": 59388.601562
+  },
+  {
+   "c": 58969.898438,
+   "d": "2024-08-31",
+   "h": 59432.59375,
+   "l": 58768.785156,
+   "o": 59117.480469
+  },
+  {
+   "c": 57325.488281,
+   "d": "2024-09-01",
+   "h": 59062.070312,
+   "l": 57217.824219,
+   "o": 58969.800781
+  },
+  {
+   "c": 59112.480469,
+   "d": "2024-09-02",
+   "h": 59403.070312,
+   "l": 57136.027344,
+   "o": 57326.96875
+  },
+  {
+   "c": 57431.023438,
+   "d": "2024-09-03",
+   "h": 59815.058594,
+   "l": 57425.167969,
+   "o": 59106.191406
+  },
+  {
+   "c": 57971.539062,
+   "d": "2024-09-04",
+   "h": 58511.570312,
+   "l": 55673.164062,
+   "o": 57430.347656
+  },
+  {
+   "c": 56160.488281,
+   "d": "2024-09-05",
+   "h": 58300.582031,
+   "l": 55712.453125,
+   "o": 57971.703125
+  },
+  {
+   "c": 53948.753906,
+   "d": "2024-09-06",
+   "h": 56976.109375,
+   "l": 52598.699219,
+   "o": 56160.191406
+  },
+  {
+   "c": 54139.6875,
+   "d": "2024-09-07",
+   "h": 54838.144531,
+   "l": 53740.070312,
+   "o": 53949.085938
+  },
+  {
+   "c": 54841.566406,
+   "d": "2024-09-08",
+   "h": 55300.859375,
+   "l": 53653.757812,
+   "o": 54147.933594
+  },
+  {
+   "c": 57019.535156,
+   "d": "2024-09-09",
+   "h": 58041.125,
+   "l": 54598.433594,
+   "o": 54851.886719
+  },
+  {
+   "c": 57648.710938,
+   "d": "2024-09-10",
+   "h": 58029.976562,
+   "l": 56419.414062,
+   "o": 57020.097656
+  },
+  {
+   "c": 57343.171875,
+   "d": "2024-09-11",
+   "h": 57991.320312,
+   "l": 55567.339844,
+   "o": 57650.289062
+  },
+  {
+   "c": 58127.011719,
+   "d": "2024-09-12",
+   "h": 58534.359375,
+   "l": 57330.101562,
+   "o": 57343.171875
+  }
+ ],
+ "precedents": [
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0004,
+   "t": "Bitcoin and Ether have recovered some of their losses from earlier in the week. The Nasdaq Composite is down 2.3% since the start of the year and the S&P 500 has lost 0.8%. The Dow Jones Industrial Av",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": 0.0116,
+   "t": "Bitcoin (BTC) remains stable despite the Federal Reserve's decision to maintain interest rates. Most of the top 20 digital coins and tokens experienced a dip following the news. The Fed has been aggre",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": 0.0026,
+   "t": "The Bollinger bandwidth indicator on Bitcoin's monthly chart has formed a pattern that previously preceded near-vertical rallies in 2016 and late 2020. The bandwidth has recently bounced from 1% to 1%",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0132,
+   "t": "Bitcoin has crossed the 47,000 USDT benchmark and is now trading at 47,029.601563 USDT with a 4.09% increase in 24 hours. Bitcoin is trading on Binance Market Data at 15:22 PM(GMT) on February 09, 202",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0043,
+   "t": "According to Andrew Kang, long-term Bitcoin demand flows for 2024 will be between $40 billion and $130 billion. BlackRock estimates an inflow of $150 billion to $200 billion over the next three years.",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0419,
+   "t": "Bitcoin has crossed the 49,000 USDT benchmark and is now trading at 49,001.101563 USDT, with a 1.59% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 19:08 PM (UTC) on February 13, 2",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0419,
+   "t": "The first month of Bitcoin exchange-traded funds (ETFs) has been marked by significant success, with daily net inflows averaging about $125 million. Bitcoin's price recovered after a brief dip followi",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0419,
+   "t": "The recent listing of bitcoin exchange-traded funds (ETFs) is pushing up the token's price. MicroStrategy will be re-branding to a bitcoin development company to accumulate more bitcoin and promote th",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0419,
+   "t": "Bitcoin has crossed the 50,000 USDT benchmark and is now trading at 50,026.671875 USDT with a 3.30% increase in 24 hours. Bitcoin is trading on Binance Market Data at 5:53 AM (GMT) on February 13, 202",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0022,
+   "t": "Long-term Bitcoin investors are reaping rewards as the cryptocurrency rallies to multi-year highs above $50,000. Bitcoin prices remain 28% below their all-time high, but the number of BTC held at a lo",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": 0.0022,
+   "t": " the open position of Bitcoin futures contracts. CME BTC contracts with 125,830 BTC (roughly $6.48 billion). Binance BTC BTC contracts (approximately $5.100 BTC (about $5,100 BTC). Coinglass data.  $2",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0022,
+   "t": "Bitcoin has recovered from its losses after a higher-than-expected U.S. inflation report. Risk assets like Bitcoin are behaving as if a cut in the Fed rate is still likely. Polymarket contract indicat",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0043,
+   "t": "The Bitcoin ecosystem tokens have seen a significant increase in value on February 15th. CKB, STX, RIF, ALEX, and BADGER are among the tokens experiencing significant gains. The gains highlight the gr",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0043,
+   "t": "US Bitcoin spot ETFs experienced a net inflow of $340 million on February 14. GBTC reported a net outflow of $131 million, BTCO saw outflows of $37 million during the same period. The data highlights ",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0043,
+   "t": "Bitcoin has dropped below 52,000 USDT and is now trading at 51,986 USDT with a 4.85% increase in 24 hours. Bitcoin is trading at 6:56 AM (GMT) on Feb 15, 2024, 06:56 am (UTC).",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0089,
+   "t": "Bitcoin has crossed the 52,000 USDT benchmark and is now trading at 52,009.050781 USDT with a 0.22% increase in 24 hours. Bitcoin is trading on Binance Market Data at 02:14 AM(UTC).  ",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.0103,
+   "t": "On February 21, Bitcoin dropped below the US$51,000 threshold. Bitcoin is currently trading at 50,942 USDT, representing a 24-hour decline of 1.89% on Binance's market data from Binance. Bitcoin has b",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0949,
+   "t": "Bitcoin has crossed the 56,000 USDT benchmark and is now trading at 56,033.12 USDT, with a +8.84% increase in 24 hours. Bitcoin is trading on Binance Market Data at 4:36 AM on February 27, 2024.",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0209,
+   "t": "The next halving event is scheduled for mid-April. Bitcoin is trading slightly above $57,200. The trading volume of Bitcoin exchange-traded funds reached a new high of $3.2 billion last week. BlackRoc",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0663,
+   "t": "Bitcoin has crossed the 67,000 USDT benchmark and is now trading at 67,399.76 USDT. Bitcoin has risen 7.38% in 24 hours. Bitcoin is trading on Binance Market Data at 17:39 (GMT+0). ",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.0663,
+   "t": "On March 4, Bitcoin's value dropped to $62,300 after having surpassed $64,000 previously. Bitcoin has since rebounded to $63,139 on Binance market data. Bitcoin is the world's most popular and most va",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0361,
+   "t": "Bitcoin has dropped below 68,000 USDT and is now trading at 67,999.398438 USDT. Bitcoin has a 7.42% increase in 24 hours. Bitcoin is trading on Binance Market Data at 02:17 AM(GMT).",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.0205,
+   "t": "Bitcoin open interest has reached an all-time high of $9.6 billion on the Chicago Mercantile Exchange (CME) according to Coinglass data analytics platform. Coinglasses is an analytics platform that tr",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0205,
+   "t": "The Bitcoin Ordinals wallet Oyl has raised $3 million in pre-seed funding from investors including Arthur Hayes and BRC-20 token standard creator Domo. Oyl is set to launch in the coming weeks and wil",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0205,
+   "t": "Bitcoin has dropped below 67,000 USDT and is now trading at 66,992.546875 USDT. Bitcoin has a narrowed 1.34% increase in 24 hours. Bitcoin is trading on Binance Market Data at 23:17 PM (GMT).",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.0076,
+   "t": "The number of Bitcoin addresses with at least 1,000 BTC has surged to 2,104 as of March 7. Bitcoin's next significant target might reach around $92,500, setting the stage for more exciting development",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.045,
+   "t": "On March 10th, Bitcoin's price reached $69,019. This is a 1.5% increase in value within a 24-hour period. Investors and traders are closely monitoring the market trends and fluctuations to capitalize ",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0089,
+   "t": "Bitcoin has crossed the 70,000 USDT benchmark and is now trading at 70,100 USDT, with a 1.13% increase in 24 hours. Bitcoin is trading at 7.13 AM(GMT) on Mar 11, 2024, 07:13 AM",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0089,
+   "t": "Bitcoin has crossed the 72,000 USDT benchmark and is now trading at 72,130 USDT, with a 3.57% increase in 24 hours. Bitcoin is trading on Binance Market Data at 11:45 AM (GMT) on Mar 11, 2024.",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0224,
+   "t": "Bitcoin is currently trading at $72,621.10 USDT, marking a 24-hour increase of 1.22%. Bitcoin briefly reached $73,000 USDT before falling back to $72.621 USDT. Binance market data shows Bitcoin has ri",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0279,
+   "t": "The CEO of 10X Research, Markus Thielen, has published a bullish forecast for Bitcoin. Bitcoin may reach $77,000 in early April and $146,000 within the next 90 days. Thielen predicts Bitcoin could rea",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.0589,
+   "t": "The Bitcoin price has declined 10% over 24 hours to almost $68,000. Bitcoin is on the verge of transitioning from its 'Pre-Halving Rally' phase into the 'pre-Halve Retrace' phase. Bitcoin may reach a ",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0589,
+   "t": "Bitcoin has crossed the 69,000 USDT benchmark and is now trading at 69,106.859375 USDT, with a 1.88% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 18:43 PM (GMT).",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0471,
+   "t": "El Salvador President Nayib Bukele has added 1 BTC to his wallet today. El Salvador has adopted Bitcoin as legal tender alongside the US dollar. The country's move has sparked global interest and deba",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0471,
+   "t": "El Salvador is the first country to approve Bitcoin as legal tender. El Salvador started buying Bitcoin in September 2021 when it was valued at $51,769. The country's unrealized gains have reached $66",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0123,
+   "t": "The launch of Bitcoin ETF in the US earlier this year has attracted institutional investors and new fund flows. Bitcoin has risen 56% this year and reached an all-time high of almost $73,798 last week",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.0123,
+   "t": "Bitcoin dropped to its lowest levels since March 6 on Bitstamp and bottomed at $64,522 on March 15th. The bitcoin futures market operated by CME Group ended at $69,135, leaving a gap between the futur",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": -0.0834,
+   "t": "Bitcoin has dropped below 67,000 USDT and is now trading at 66,923.859375 USDT, with a 0.46% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 14:35 PM (GMT) on Mar 18, 2024.",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0834,
+   "t": "Fidelity's Wise Origin Bitcoin Fund (FBTC) has attracted $6.9 billion since its launch on January 12. BlackRock's iShares Bitcoin Trust (IBIT) is the second most popular exchange-traded fund (ETF) thi",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.0834,
+   "t": "According to Rekt Capital, Bitcoin is on the brink of entering a pre-halving 'danger zone' before its halving event. Bitcoin's price dropped 40% in 2016 and dropped 20% in 2020. Binance's CEO Richard ",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0834,
+   "t": "This past week Bitcoin reached a new all-time high at $73,777 before dropping to near $64,500. Several altcoins such as Near Protocol (NEAR), Aptos (APT), Render (RNDR), and Maker (MKR) are also showi",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0834,
+   "t": "Bitcoin has crossed the 68,000 USDT benchmark and is now trading at 68,023.226563 USDT with a 3.82% increase in 24 hours. Bitcoin is trading on Binance Market Data at 8:16 AM on Mar 18, 2024.",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0969,
+   "t": "Solv Protocol has announced the launch of its cross-chain yield-generating Bitcoin asset, SolvBTC. The asset will be available on the following networks: Etherium, Arbitrum, BNB Chain, Merlin Chain an",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0969,
+   "t": "Bitcoin has dropped below 65,000 USDT and is now trading at 64,982.230469 USDT, with a 5.36% decrease in 24 hours. Bitcoin is trading on Binance Market Data on Mar 19, 2024, at 5:25 AM (UTC).",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0969,
+   "t": "MicroStrategy has completed a $603.75 million convertible notes offering with a coupon rate of 0.875% and a conversion premium of 40%. The company applied for a $500 million convertible bond issuance ",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0357,
+   "t": "Elastos has announced the BTC Oracle, a solution that allows every EVM-compatible blockchain to function as a Bitcoin L2. Elastos' BTC Oracle acts as a zero-knowledge proof data feed that provides rea",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": -0.0357,
+   "t": "Jian Wen has been found guilty of laundering large amounts of bitcoin for Yadi Zhang, a Chinese fugitive connected to an alleged $6 billion investment fraud. She will be sentenced on May 10. The UK po",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.0357,
+   "t": "The Bitcoin Layer2 ecosystem roundtable X Spaces will be held on March 20 at 20:00. The theme of the roundtable is 'L2 Hundred Regiments Battle, the Next Trend of the Bitcoin Ecosystem'. Several promi",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0357,
+   "t": "Bitcoin has crossed the 68,000 USDT benchmark and is now trading at 68,092.039063 USDT. Bitcoin has risen 7.47% in 24 hours. Bitcoin is trading on Binance Market Data at 22:16 PM (GMT).",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0262,
+   "t": "Bitcoin's price has recently experienced a pullback below the $70K level. The market is currently testing the $67K \u2013 $69K zone. Bitcoin funding rates have been experiencing a drop recently. This has l",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0044,
+   "t": "Bitcoin Layer2 project AINN Layer2 has completed a new round of financing. The project supports large-scale applications of Web3 AI. Participants in the funding round included Waterdrip Capital, Satos",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.0044,
+   "t": "Bitcoin has dropped below 65,000 USDT and is now trading at 64,863.988281 USDT, with a 2.94% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 10:26 AM(UTC).",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0044,
+   "t": "Bitcoin is still overbought despite the recent sharp correction in the cryptocurrency market. The price of bitcoin fell by over 15% before rebounding following the Federal Open Market Committee meetin",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0495,
+   "t": "Bitcoin has crossed the 65,000 USDT benchmark and is now trading at 65,010 USDT, with a 3.12% increase in 24 hours. Bitcoin is trading on Binance Market Data at 22:33 PM (GMT) on Mar 23, 2024.",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "sell",
+   "r": 0.0495,
+   "t": "Bitcoin spot ETFs experienced a total net outflow of $51.6 million on March 22nd. BlackRock ETF IBIT had a single-day net inflow of only $18.89 million. Grayscale ETF GBTC had a one-day outflow $169 m",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0405,
+   "t": "Bitcoin has crossed the 65,000 USDT benchmark and is now trading at 65,040 USDT, with a 1.03% increase in 24 hours. Bitcoin is trading on Binance Market Data at 8:54 AM on Mar 24, 2024. ",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0004,
+   "t": "Bitcoin is back above $70,000. Bitcoin has seen a spike in Bitcoin's \"Age Consumed\" metric. Several large-cap altcoins have seen net inflows in the last week. The total crypto market cap hovers at $1.",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0004,
+   "t": "The upcoming Bitcoin halving in 2024 could present a promising bull-run scenario. Bitcoin's halving event reduces the supply of new BTC blocks every four years or every 210,000 blocks. Bitcoin exchang",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0004,
+   "t": "Bitcoin has crossed the 68,000 USDT benchmark and is now trading at 68,178 USDT, with a 4.31% increase in 24 hours. Bitcoin is trading on Binance Market Data at 14:00 PM (GMT) on Mar 25, 2024.",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0004,
+   "t": "Ripple's price has been trending lower against BTC and consolidating against USDT. The XRP price is revisiting the 900 SAT support area. The next objective would be the 1200 SAT resistance level. If X",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0076,
+   "t": "Galaxy Digital CEO Mike Novogratz believes that the approval of a bitcoin ETF is just the beginning of accelerated crypto adoption. Galaxy launched a spot bitcoin ETF with Invesco in January and it ha",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0076,
+   "t": "The fifth largest Bitcoin wallet transferred almost its entire balance of 94.5K BTC to three new addresses, leaving only 1.4 BTC in the original address. The transfer took place in the early hours of ",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0076,
+   "t": " the three reversal indicators monitored by 10x Research's weekly market analysis report on March 26th. Bitcoin is predicted to experience a significant increase by the end of this quarter. The key le",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": -0.0076,
+   "t": "Bitcoin has dropped below 70,000 USDT and is now trading at 69,999.992188 USDT. Bitcoin has a narrowed 5.12% increase in 24 hours. Bitcoin is trading on Binance Market Data at 00:48 AM (GMT).",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": 0.0186,
+   "t": "The Bitcoin price retracted at the $71,000 level on March 27th. Bitcoin's price recovered from $63,800 to $70,000 on March 20th, despite $888 million net withdrawal from U.S. Bitcoin spot exchange-tra",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0186,
+   "t": "The new US spot Bitcoin exchange-traded fund (ETF) was launched over two months ago. The total amount of funds flowing into the Bitcoin ETF has reached approximately $11.7 billion. The amount of money",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0186,
+   "t": "Bitcoin reached its highest level in nearly two weeks on March 27th at $71,754 on Bitstamp. Bitcoin has since rebounded to the $68,500 level. Some analysts predict an assault on the final band of shor",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0186,
+   "t": "According to the Kobeissi Letter, Bitcoin (BTC) could experience a significant surge. The gap between institutional long positions and hedge fund shorts could lead to a massive short squeeze. Bitcoin ",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.0186,
+   "t": "Bitcoin reached its all-time high of $73,738 earlier this month, but failed to break through to a new peak. Bitcoin's 16% correction on March 26 was almost identical to the pre-halving pullback in the",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0186,
+   "t": "Ten Bitcoin spot ETFs experienced a net inflow of funds amounting to $417.98 million on March 26th. After the US stock market opens on March 27th, the ETF custody addresses will see a net outflow of 6",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.012,
+   "t": "Bitcoin has crossed the 71,000 USDT benchmark and is now trading at 71,080.992188 USDT, with a 0.52% increase in 24 hours. Bitcoin is trading on Binance Market Data at 13:29 PM(UTC). ",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.012,
+   "t": "The demand for Bitcoin ETFs in the United States has exceeded the new supply of Bitcoin by seven times in the last seven years, according to Foresight News analyst Gayatri has reported that the demand",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0035,
+   "t": "The Bitcoin NFT project INK experienced a significant increase in price and daily trading volume after its official launch on March 29th. INK is divided into two series: INK Custom, which consists of ",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0035,
+   "t": "Brazil's B3 exchange has received permission from the country's securities regulator to offer Bitcoin futures. The Bitcoin futures will be linked to the Nasdaq Bitcoin reference price, with each contr",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0035,
+   "t": "The total open interest for Bitcoin futures contracts reached a record high of 550,200 BTC (approximately $38.84 billion) on March 29th. CME's Bitcoin futures open interest ranked first with 165,800 B",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0242,
+   "t": "El Salvador has the highest interest in Bitcoin. The Central American nation became the first country to officially recognize Bitcoin as legal tender in 2021. Nigeria ranks second in the list, despite",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": -0.0229,
+   "t": "The Bitcoin price has fallen 15.4% from its all-time high of $73,000 to $61,800 on March 20th. Bitcoin investors have already sold 2 million Bitcoins for $2.6 billion. The Bitcoin price is almost iden",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "sell",
+   "r": -0.061,
+   "t": "BlackRock's trading volume reached $1.36 billion on April 1st. Grayscale's GBTC trading volume was $714 million. Fidelity's FBTC trading volumes amounted to $554 million. GBTC experienced a net outflo",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.061,
+   "t": "MicroStrategy has a market capitalization higher than nearly half of the companies in the S&P 500 Index. MicroStrategy is one of the largest publicly-traded holders of Bitcoin. The company currently h",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.061,
+   "t": "Bitcoin has dropped below 70,000 USDT and is now trading at 69,896 USDT with a 0.61% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 5:47 AM on April 01, 2024, at 5.47 AM(UTC).",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.061,
+   "t": "Bitcoin Layer2 network BOB and Anduro are working on a new Bitcoin sidechain called ALYS. ALYS features include Bitcoin compatibility, low fees, fast settlement, and resistance to MEV. Anduro was laun",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0082,
+   "t": "Billy Markus, the software engineer who created the original meme Dogecoin in collaboration with Jackson Palmer in 2013, has commented on the recent Bitcoin price fall. Bitcoin has lost several thousa",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0082,
+   "t": "El Salvador has the highest interest in Bitcoin. The Central American nation became the first country to officially recognize Bitcoin as legal tender in 2021. Nigeria ranks second in the list, despite",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.0082,
+   "t": "Bitcoin has dropped below 67,000 USDT and is now trading at 66,616.8125 USDT, with a 5.94% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 02:40 AM (GMT) on April 02, 2024.",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0082,
+   "t": "Bitcoin has dropped below 66,000 USDT and is now trading at 65,900 USDT, with a 5.10% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 09:05 AM(GMT) on April 02, 2024.",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0383,
+   "t": "Bitcoin Cash is reducing its supply of newly minted tokens by 50% today. Bitcoin's own 'halving' event is expected to take place in approximately 16 days. Bitcoin halvings have been known to trigger m",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0383,
+   "t": "Bitcoin has seen a rise of over 130% in the past year, reaching a record high of $73,800 last month. The rise coincided with a surge in demand from spot Bitcoin ETFs in the United States. The Nigerian",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0383,
+   "t": "Bitcoin miners' revenue reached a record high in March, surpassing $2 billion. In the same month, stakers earned $247 million and transaction fees accounted for $62.41 million. The increase in revenue",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.0383,
+   "t": "Bitcoin has dropped below 65,000 USDT and is now trading at 64,960.730469 USDT, with a 6.20% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 00:34 AM(UTC) on April 03, 2024.",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0098,
+   "t": "Bitcoin has been hovering between $62,800 and $71,860 for over two weeks. Data reveals notable BTC withdrawals from exchange wallets to private custody, indicating accumulation by significant investor",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0098,
+   "t": "The CEO of Jan3, Samson Mow, compares Bitcoin to Neo from 'The Matrix' on social media. Mow believes Bitcoin will reach the $1 million mark in the near future due to the recently launched spot ETFs an",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0098,
+   "t": "Bitcoin's price has been fluctuating between $70,000 and $67,000 over the past week. Bitcoin Cash has been making headlines due to the halving of its rewards to 6.25 BCH per block. The total crypto ma",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0098,
+   "t": "Bitcoin halvings affect the supply dynamics of Bitcoin, trigger changes in market sentiment, and drive its adoption rates to new heights. The upcoming April 2024 halving is already exhibiting unique c",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": 0.0156,
+   "t": "The influence of Bitcoin Exchange-Traded Funds (ETFs) on the Bitcoin market may take longer to fully materialize than initially anticipated. Bitcoin's current price hovers around $66,000, with potenti",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.0156,
+   "t": "Bitcoin's value dropped below $66,000 for a short-term drop of 2.14%. Bitcoin later recovered slightly. Bitcoin is one of the most valuable and widely traded cryptocurrencies in the world. Bitcoin's v",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0156,
+   "t": "Bitcoin has dropped below 68,000 USDT and is now trading at 67,960.007813 USDT with a narrowed 2.72% increase in 24 hours. Bitcoin is trading on Binance Market Data at 01:31 AM(GMT) on April 5th 2024.",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0068,
+   "t": "The CEO of Bitcoin-focused company Jan3 is optimistic about Bitcoin's future. Bitcoin is trading at the $68,130 price level today. Mow believes Bitcoin is on its way to hitting the $1 million price ma",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0068,
+   "t": "Bitcoin has crossed the 68,000 USDT benchmark and is now trading at 68,007813 USDT with a 1.29% increase in 24 hours. Bitcoin is trading on Binance Market Data at 8:51 AM on April 06, 2024.",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0068,
+   "t": "Bitcoin has crossed the 68,000 USDT benchmark and is now trading at 68,062.007813 USDT with a 0.19% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 00:40 AM(GMT).",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.0327,
+   "t": "Bitcoin has a market capitalization exceeding $1.3 trillion. Bitcoin's market cap is 2.4 times larger than that of JPMorgan Chase alone. Gabor Gurbacs has challenged the narrative surrounding Bitcoin'",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0327,
+   "t": "A significant amount of Bitcoin has been moved out of known crypto exchange wallets in the last month. Bitcoin is at its highest level since June 2022. Bitcoin has also seen an increase in the number ",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0348,
+   "t": "Bitcoin has crossed the 72,000 USDT benchmark and is now trading at 72,006.0625 USDT, with a 3.84% increase in 24 hours. Bitcoin is trading on Binance Market Data at 18:42 PM(UTC). ",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0348,
+   "t": "Bitcoin has once again broken through the 70,000 USDT mark. Bitcoin has seen a rise of 0.95% over the past 24 hours and is now trading at 70,118 USDT. Bitcoin continues to maintain its strong position",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.021,
+   "t": "A Japanese Web3 infrastructure provider has added Bitcoin worth $6.56 million to its balance sheet. The company has a nearly 90% increase in its publicly traded stock price in Tokyo within two days. T",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.021,
+   "t": "BlackRock's new Bitcoin ETF is nearing $20 billion in assets under management. BlackRock's Bitcoin Trust (IBIT) joined the $10 billion club in just seven weeks. The previous record of three years was ",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.021,
+   "t": "The Bitcoin market experienced unusual fluctuations. Bitcoin dropped below the $70,000 threshold. Bitcoin ETFs in the United States faced a dearth of capital inflows and a substantial $300-million out",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.021,
+   "t": "The scale of the Bitcoin ecosystem and its native assets will surpass $500 billion in the next five years. John Riggins, partner at BTC Inc and founder of Bitcoin Magazine, made a bold prediction duri",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0075,
+   "t": "Bitcoin has crossed the 70,000 USDT benchmark and is now trading at 70,016.039063 USDT with a 1.28% increase in 24 hours. Bitcoin is trading on Binance Market Data at 19:59 PM on April 10, 2024.",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "sell",
+   "r": -0.0075,
+   "t": "On April 10th, an estimated net outflow of 270 BTC is expected after the opening of the US stock market. The main inflow is expected to be from BlackRock (IBIT), with an inflow of 1,865 BTC. Currently",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0075,
+   "t": "Grayscale Bitcoin Trust's total outflows from the fund have exceeded $15 billion in the past three months. The rise in the value of Bitcoin has only slightly reduced Grayscale's assets under managemen",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0075,
+   "t": "Bitcoin has dropped below 68,000 USDT and is now trading at 67,975.992188 USDT, with a 4.08% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 12:37 PM (GMT) on April 10, 2024.",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0409,
+   "t": "Tim Draper forecasts a Bitcoin value of $250,000 by the end of 2024. Draper believes Bitcoin is a hedge against the devaluation of fiat currencies. The approval of spot Bitcoin ETFs in the U.S. is a s",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0409,
+   "t": "Wedmont Private Capital has recently bought 3,471 shares in the Fidelity Wise Origin Bitcoin Fund (FBTC). The shares are valued at $209,336. Fidelity's Bitcoin ETF was given the green light in early J",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0409,
+   "t": "Robert Kiyosaki believes Bitcoin will reach $2.3 million per coin. Cathie Wood, the CEO of Ark Invest, predicts Bitcoin's value will rise to $2 million. BlockBeats reports that if institutions allocat",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0409,
+   "t": "The US inflation rate in March expanded by 0.4% month-on-month and 3.5% year-over-year. The Federal Reserve is expected to keep interest rates at their current level for a significant period. Bitcoin'",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.0502,
+   "t": "The U.S. government is the largest Bitcoin holder among the global states. The UK and Germany follow closely with respective Bitcoin holdings of 61,245 BTC ($4.5 billion) and 49,858 BTC (around $3.5 b",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0502,
+   "t": "According to Blockworks, Bitcoin is highly divisible, up to eight decimal places, resulting in 100 million satoshis (sats) per Bitcoin. The current circulating supply of Bitcoin translates to 1.968 qu",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0502,
+   "t": "Kiyosaki supports Cathie Wood's $2.3 million Bitcoin (BTC) prediction made by Ark Invest, earlier this year. Ark Invest published a research report detailing the potential impact of institutional inve",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0502,
+   "t": "On April 12, on-chain data analyst Yu Jin predicts a net inflow of 1295 BTC to ETF custody addresses following the opening of the US stock market. Grayscale (GBTC) is expected to see an outflow of abo",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0502,
+   "t": "The trading volume data for Bitcoin spot ETFs on April 11th has been released by HODL15Capital. BlackRock's IBIT had a trading volume of $1.1 billion. Grayscale's GBTC had trading volume $643 million.",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.03,
+   "t": "The global cryptocurrency market cap now stands at $2.45T, down by -6.46% over the last day. Bitcoin has been trading between $70,975.54 and $65,086.86 over the past 24 hours. Today, BTC is trading at",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.03,
+   "t": "The fourth Bitcoin halving event is scheduled for April 20th, 2024. The halving process is a significant event in the cryptocurrency world as it directly impacts the rate at which new Bitcoins are cre",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.03,
+   "t": "A substantial net outflow of 824 BTC is expected from Bitcoin spot ETF custody addresses following the opening of the U.S. stock market on April 15. Grayscale (GBTC) experienced an outflow $166.21 mil",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0352,
+   "t": "Bitcoin has crossed the 65,000 USDT benchmark and is now trading at 65,352.398438 USDT with a 5.18% increase in 24 hours. Bitcoin is trading on Binance Market Data at 22:08 PM on April 14, 2024.",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "sell",
+   "r": -0.0352,
+   "t": "Bitcoin's price dropped 7% in the last 24 hours, causing $256 million in losses for traders with long positions. Bitcoin's current price stands at $63,858. $945.9 million was liquidated from 253,554 t",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0352,
+   "t": "Bitcoin has broken through the $65,000 mark and is currently trading at $65.62, a 1.2% increase in the last 24 hours. On the other hand, Etherium has also surpassed the $3,100 threshold and is now at ",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "sell",
+   "r": 0.0061,
+   "t": "Last week, US spot bitcoin exchange-traded funds (ETFs) experienced net outflows of $83 million. Since January 11, spot bitcoin ETFs have received $12.5 billion in positive flows. Bitcoin\u2019s price was ",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0061,
+   "t": "Bitcoin has dropped below 63,000 USDT and is now trading at 62,943.269531 USDT, with a 2.12% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 19:02 PM (UTC).",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.0061,
+   "t": "Bitcoin's price dropped from $60,822 to approximately $64,438 over the weekend. Peter Brandt suggests Bitcoin has completed an 'end run'. Brandt had previously predicted Bitcoin's bull run would peak ",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0061,
+   "t": "There was a sharp decline in Bitcoin's price, triggered by geopolitical tensions. Bitcoin is currently trading at $63,950 and showing a 5.22% increase from its recent low of $60,660. Bitcoin halving i",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0061,
+   "t": "Bitcoin has crossed the 66,000 USDT benchmark and is now trading at 66,030.476563 USDT, with a 2.89% increase in 24 hours. Bitcoin is trading on Binance Market Data at 6.19 AM on April 15, 2024.",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0397,
+   "t": "Canaccord Genuity predicts Bitcoin spot ETFs will be added to RIA platforms and large brokerage firms in the coming months. The new FASB accounting standards and ongoing inflation concerns may encoura",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0397,
+   "t": "Bitcoin has dropped below 63,000 USDT and is now trading at 62,947.789063 USDT, with a 3.53% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 03:41 AM (UTC).",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": -0.0397,
+   "t": "Grayscale's Bitcoin holdings have halved in about three months. GBTC's market share has dropped from 100% on January 11 to 37.3% yesterday. BlackRock's IBIT has gained a 32.2% share since January 11. ",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0397,
+   "t": "A dormant Bitcoin wallet has been reactivated. The wallet contains 50 BTC worth $3,314,211 at the time of the announcement. The last Bitcoin activity in the wallet was in 2010, the year when Bitcoin's",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": 0.0365,
+   "t": "Bitcoin's recent 16.65% price drop has caused concern among traders. The fourth halving of the cryptocurrency is just days away. Bitcoin's price reached $8,078 before climbing to a peak of $69,000. Ac",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.0365,
+   "t": "Bitcoin's price has dropped 13.65% within a month of establishing a new all-time high of approximately $73,800. BTC/USD is trading at a low of about $62,622 as of April 17th. Bitcoin's downside target",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0365,
+   "t": "The Bitcoin Layer2 network, Bsquared Network, has announced the launch of its mainnet. Users can now bridge their Bitcoin (BTC) addresses to the mainnet (EVM) addresses and their mainnet BTC addresses",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0365,
+   "t": "The upcoming Bitcoin halving is three days away. Michael Saylor has highlighted the potential impact of the upcoming halving on the cryptocurrency's price. The halving reduces the future supply of Bit",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0052,
+   "t": "Bitcoin has dropped below 62,000 USDT and is now trading at 61,930.011719 USDT, with a 0.85% decrease in 24 hours. Bitcoin is trading at 12:31 PM (UTC) on April 18, 2024.",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0052,
+   "t": "JPMorgan and Goldman Sachs advise Bitcoin investors to exercise caution ahead of the upcoming Bitcoin halving. The halving is due on April 20 at 01:44 UTC. Bitcoin's current market price of $63,700 is",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0052,
+   "t": "The search volume for 'Bitcoin Halving' has reached an all-time high in Nigeria, the Netherlands, Switzerland, Switzerland and Cyprus. The countries showing the most interest in Bitcoin halving are Ni",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.0052,
+   "t": "Bitcoin has crossed the 63,000 USDT benchmark and is now trading at 63,008.578125 USDT, with a 0.04% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 11:26 AM (GMT) on April 18, 2024",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.018,
+   "t": "Bitcoin whales have increased their Bitcoin holdings by 19,760 BTC at an average price of $62,500. Historically, accumulation by these addresses often precedes a rise in the price of Bitcoin. Foresigh",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.018,
+   "t": "Bitcoin has crossed the 64,000 USDT benchmark and is now trading at 64,00 USDT, with a 4.97% increase in 24 hours. Bitcoin is trading on Binance Market Data at 6:50 AM on April 19, 2024. ",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.018,
+   "t": "Bitcoin has dropped below 63,000 USDT and is now trading at 62,941.988281 USDT. Bitcoin has a narrowed 3.02% increase in 24 hours. Bitcoin is trading on Binance Market Data at 00:14 AM (GMT).",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.001,
+   "t": "Tim Draper predicts that Bitcoin's price could rise to $10 million once Bitcoin is accepted as a universally accepted form of payment for everyday necessities such as food, clothing, and shelter. Drap",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.001,
+   "t": "Greeks.live shares data about the upcoming expiration of Bitcoin (BTC) and ETH (ETH) options worth $2.33 billion for both BTC and ETH. Bitcoin's price dropped towards the $60,000 mark, while ETH's pri",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.001,
+   "t": "As Bitcoin approached its fourth halving event on April 20, mining firms listed on the Nasdaq stock exchange saw a significant rise in share prices during the closing 24-hour trading phase of the week",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.001,
+   "t": "On April 20, 2024, at 00:09 (UTC), Bitcoin halved the block height from 6.25 BTC to 3.125 BTC. The previous halving took place on May 11, 2020. The mining reward of the Bitcoin network dropped by 50%.",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0294,
+   "t": "After the halving event, Bitcoin showed a robust recovery. Bitcoin exchange-traded funds experienced an inflow of $30.4 million a day before halving. Binance Coin (BNB) has been oscillating between $4",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0294,
+   "t": "The global cryptocurrency market cap now stands at $2.32T, down by -1.15% over the last day. Bitcoin (BTC) has been trading between $63,277 and $65,696 over the past 24 hours. Today, BTC is trading at",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": 0.0294,
+   "t": "The defunct Mt.Gox cryptocurrency exchange has updated the claim form and displays BCH and BTC codes. Some users have pointed out that this update is not useful and does not have much relevance to the",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0294,
+   "t": "The launch of the new Runes protocol has increased Bitcoin transaction fees to record levels. Bitcoin mining revenue shot to a record $107.8 million on April 20 due to the new protocol. Bitcoin\u2019s crea",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0064,
+   "t": "Stacks has begun the rollout of its Nakamoto upgrade. The development is aimed at improving transaction throughput and ensuring Bitcoin finality for layer-2 transactions. The upgrade is expected to sp",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0064,
+   "t": "Bitcoin miner Hut 8's diversified revenue streams could give it a long-term advantage over its competitors. Hut 8 and US Bitcoin Corp. underwent a \u201cmerger of equals\u201d that closed in November. The compa",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0064,
+   "t": "Bitcoin's price has been in a consolidation phase for the past few weeks. Bitcoin's price remains confined between the $60K and $68K levels, with no significant breakout on either side. In recent days",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": -0.0064,
+   "t": "Digital asset investment products experienced a net outflow of $206 million last week. The trading volume of Exchange Traded Products (ETPs) slightly declined, reaching $18 billion. Bitcoin saw a capi",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.0064,
+   "t": " the beta values of global crypto hedge funds last week. Bitcoin long futures liquidations taking the lead. The Bitcoin halving period. The halving event. The effects are delayed delay caused by the s",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0321,
+   "t": "San Francisco-based Bitmain has announced the development of a three-nanometer chip for Bitcoin mining. The chip is a crucial element in the creation of some of the most sophisticated computers. The c",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0321,
+   "t": "The CEO of Jan3, Samson Mow, has discussed the potential impact of Bitcoin halving on the cryptocurrency's supply and price. He predicts a supply shock and the emergence of 'Omega candles', which coul",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0321,
+   "t": "Bitcoin has once again surged past the 67,000 USDT mark in the past 24 hours. Bitcoin's value has risen 3.4% in a single day. Investors are advised to proceed with caution due to the inherent risks as",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0321,
+   "t": "Bitcoin advocate Tom Lee believes the markets are well-positioned for a rally. The median short interest in stocks has reached its highest level in three years. Last week, US Federal Reserve chair Jay",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.0321,
+   "t": "'Mr.100' sold 1000 Bitcoin (BTC) on April 23 for the first time since March 8th. Bitcoin's price has been fluctuating significantly in recent weeks due to the halving of the Bitcoin's block size. The ",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0032,
+   "t": "Bitcoin's market capitalization could reach $17.7 trillion. Bitcoin's inflation rate is lower than gold's. It could take 5 to 10 years for Bitcoin's market cap to match its S2F valuation. Bitcoin inve",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0032,
+   "t": "Bitcoin has dropped below 64,000 USDT and is now trading at 63,835.609375 USDT, with a 4.36% decrease in 24 hours. Bitcoin is trading at 19:02 PM (UTC) on April 24, 2024.",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0032,
+   "t": "A yellow legal pad with 'Buy Bitcoin' scribbled on it has been sold for $1.027 million. The sign was displayed during Janet Yellen's testimony in July 2017. Bitcoin's value has skyrocketed from $2,300",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0032,
+   "t": "Bitcoin's value dropped to 66112 USDT from 66000 USDT. Bitcoin quickly rebounded to its previous level of 66000USDT. The volatility of the cryptocurrency market is part of the volatile nature of the m",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0113,
+   "t": "Long-term Bitcoin whales are amassing substantial profits despite market fluctuations. Bitcoin is trading at $64,042. Bitcoin trading volume for Bitcoin has surged by 39.59%, reaching $33.28 billion i",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0113,
+   "t": "Bitcoin has crossed the 65,000 USDT benchmark and is now trading at 65,162.488281 USDT, with a 1.54% increase in 24 hours. Bitcoin is trading on Binance Market Data at 21:16 PM on April 25, 2024.",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0113,
+   "t": "Bitcoin has dropped below 63,000 USDT and is now trading at 62,995.980469 USDT, with a 4.62% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 13:19 PM (UTC) on April 25, 2024.",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.0113,
+   "t": "The mining difficulty has been adjusted by 1.99% to 88.1 T at block height 840,672 on April 25, 2024. The current average network hashrate stands at 642.78 EH/s. The difficulty is adjusted every 2016 ",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0113,
+   "t": "The Securities and Exchange Commission has postponed its decision on the listing and trading of Bitcoin spot ETF options until May 29. The decision is eagerly awaited by the cryptocurrency market as i",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0053,
+   "t": "Bitcoin (BTC) was able to maintain a value above $63,000 on April 26. Bitcoin's price has suffered from spot Bitcoin exchange-traded funds (ETFs) outflows and amplified regulatory scrutiny. US Senator",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": -0.0053,
+   "t": "Bitcoin's (BTC) market inertia persists, with analysts predicting a likely dip in BTC prices over the next two weeks. Bitcoin's dominance of the overall crypto market cap was around 55% on April 26, h",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0053,
+   "t": "The co-founder of Ord.io has confirmed his attendance at the Bitcoin Devcon event. Leonidas will deliver a speech on Demo Day at the Hong Kong Science Park from May 7 to May 8th. The event is being or",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0053,
+   "t": "The Bitcoin network has generated over 2129 BTC in fees within the first week of the new Runes token standard launch. The impact of this new token standard on the overall Bitcoin network will continue",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0053,
+   "t": "BlackRock's IBIT had a trading volume of $914 million on April 25th. Grayscale's GBTC trading volume was $476 million. Fidelity's FBTC had trading volume $310 million. ProShares' BITO trading volume  ",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0048,
+   "t": "The Bitcoin network has reached a new milestone with its daily transactions peaking at 927,000. This surpasses the previous record of 724,000 set in December 2023. The rise in transactions is attribut",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.0048,
+   "t": "7800 bitcoins were stolen from Xu Bo, the founder and chairman of Duoyi Network. The current market value of the stolen bitcoins is estimated to be around 3.6 billion yuan. Jiang Zhuoer helped Xu Bo t",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0048,
+   "t": "BlackRock's IBIT had a trading volume of $734 million on April 26th. Grayscale's GBTC and Fidelity's FBTC had trading volumes of $309 million and $41.70 million. ProShares' BITO, ARKB and BITB also ha",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0115,
+   "t": "The Tenkan/Kijun crossover on Bitcoin's daily chart could signal the onset of a bearish trend. Bitcoin is trading at $63,645 at the time of reporting. Bitcoin has seen a surge of 6% in the last 24 hou",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": 0.0115,
+   "t": "The 'Buy Bitcoin' sign has been sold for 16 BTC, approximately $1.027 million at PubKey, a Bitcoin-themed bar in New York City. The highest bidder won the sign in a week-long auction. Christian Langal",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0502,
+   "t": "The Bitcoin (BTC) and Ether (Ether) exchange-traded funds (ETFs) are set to debut in Hong Kong on Tuesday morning. Cryptocurrency prices are fluctuating between $64,000 and $61,800. The first-day issu",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "sell",
+   "r": -0.0502,
+   "t": "Bitcoin closed at a weekly high of $71,400 on March 31 and closed this Sunday at roughly $63,000, marking a 12% drop. The 2017 bull market saw multiple drawdowns ranging from 20% to 30%. The newly lau",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0502,
+   "t": "Bitcoin (BTC) is set for a 12% drop of 12% this month. Hong Kong is launching Bitcoin exchange-traded funds (ETFs) in Hong Kong this week. Small-scale retail investors are starting to stack sats on Ap",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0502,
+   "t": "Bitcoin is oscillating between $70,000 and $210,000. The $70K Peak Theory suggests each consecutive cycle peak reaches around 20% of the previous cycle's peak gain. Other experts predict Bitcoin's cyc",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.0502,
+   "t": " Matrixport has warned that the cryptocurrency market needs a positive catalyst to boost Bitcoin's price. If Bitcoin fails to successfully test the support line of $62,000, it could trigger a signific",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.0393,
+   "t": "Bitcoin's price has dropped by more than 12% over the past 30 days. Bitcoin is 17% below its peak and has dropped 7% since the supply subsidy halving on April 20. The 200-day exponential moving averag",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0393,
+   "t": "The attack on the Bitcoin testnet recently led to a significant surge in network activity, generating over 165,000 blocks in just one week. The attacker, Jameson Lopp, co-founder and Chief Security Of",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0393,
+   "t": "Bitcoin has dropped below 63,000 USDT and is now trading at 62,973.371094 USDT with a narrowed 0.98% increase in 24 hours. Bitcoin is trading on Binance Market Data at 08:13 AM (UTC).",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0393,
+   "t": "Morgan Stanley filed a filing to the SEC to gain Bitcoin ETF exposure for 12 of its funds. The amount of investments into Bitcoin ETFs will be subject to 'certain limits'. Last week, AdvisorHub report",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0393,
+   "t": "The global cryptocurrency market cap is $2.31T, down by 2.96% over the last day. Bitcoin is trading at $61,982 today. Market outperformers include AMP, W, and ENA. Hong Kong Stock Exchange lists Bitco",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0149,
+   "t": "The Bitcoin L2 network, BOB, has officially announced the launch of its mainnet. More than 40 projects have been deployed on the mainnet, with a total value locked (TVL) exceeding $300 million. This m",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0149,
+   "t": "Bitcoin's price dropped to $60,860 on major spot exchanges over the weekend. The launch of Bitcoin and Ether exchange-traded funds in Hong Kong attracted only $12 million worth of trading volume, but ",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.0149,
+   "t": "Bitcoin (BTC) price is at its lowest level since February. The price has dropped to $57,082 on Bitstamp on May 1st from $60,000 on April 1st. The decrease reflects more than 20% losses in Q2 due to fa",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.0149,
+   "t": "The Bitcoin Fear and Greed Index indicates that the sentiment of cryptocurrency investors has become neutral following Bitcoin's drop below $57,000. Bitcoin has fallen from its all-time high of $73,70",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.0149,
+   "t": "Bitcoin has dropped below 60,000 USDT and is now trading at 59,978.25 USDT, with a 5.09% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 5:46 AM (GMT) on May 01, 2024.",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0637,
+   "t": "Bitcoin (BTC) price tagged $59,000 at the opening of Wall Street on May 2. Bitcoin is heading closer to the key $60,000 mark. The Federal Reserve has provided an uplift for Bitcoin (BTC). Jerome Powel",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": 0.0637,
+   "t": "Block has announced plans to invest 10% of its gross profit from Bitcoin products each month into buying Bitcoin. The company's previous investment of $220 million in Bitcoin had grown by 160% to $573",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": 0.0637,
+   "t": "US lawmakers are urging the Securities and Exchange Commission to approve options based on Bitcoin spot ETFs. The move is seen as a significant step towards the mainstream acceptance of Bitcoin and ot",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0637,
+   "t": "The current crypto market cycle is driven by the popularity of meme coins and the excitement surrounding Bitcoin ETFs. The total market capitalization of all meme coins is approximately $46 billion, s",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0159,
+   "t": "Bitcoin has crossed the 63,000 USDT benchmark and is now trading at 63,028.011719 USDT with a 7.10% increase in 24 hours. Bitcoin is trading on Binance Market Data at 20:47 PM(UTC) on May 03, 2024.",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0159,
+   "t": "Bitcoin has crossed the 60,000 USDT benchmark and is now trading at 60,144.570313 USDT, with a 2.29% increase in 24 hours. Bitcoin is trading on May 03, 2024, 12:35 PM (UTC). ",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": 0.0159,
+   "t": "The sequence of numbers tweeted by Elon Musk in June 2021 has been interpreted by some as potential Bitcoin price predictions. Bitcoin reached $61k in March 2021, surged to $69k in November 2021, and ",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0159,
+   "t": "10xResearch has issued a warning to Bitcoin investors about a potential 'Fake Dip' following a triangular consolidation of the cryptocurrency. The relative strength of Bitcoin has fallen to a low of 4",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0022,
+   "t": "Bitcoin has crossed the 64,000 USDT benchmark and is now trading at 64,010.839844 USDT with a 3.38% increase in 24 hours. Binance Market Data is on May 04, 2024, 19:55 PM(UTC).",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.0022,
+   "t": "Grayscale GBTC reported its first net inflow since its conversion to a spot ETF on May 4th. The conversion has attracted new investments. The long-term impact of this change remains to be seen. The pe",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0136,
+   "t": "Bitcoin has crossed the 64,000 USDT benchmark and is now trading at 64,018.011719 USDT, with a 0.19% increase in 24 hours on May 5, 2024, at 23:22 PM (UTC). Binance Market Data.",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.0136,
+   "t": "Bitcoin has dropped below 63,000 USDT and is now trading at 62,965.230469 USDT, with a 0.21% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 01:36 AM(GMT) May 5, 2024.",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0131,
+   "t": "The trading volume data for Bitcoin spot ETFs on May 6th has been monitored and released by HODL15Capital. BlackRock's IBIT had a trading volume of $932 million, Grayscale's GBTC had $366 million trad",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0131,
+   "t": "The CEO of Jan3 shares his thoughts on Bitcoin and its creator, Satoshi Nakamoto, on January 3, 2009. Nakamoto launched Bitcoin in 2009 and left the project in the hands of developers the following ye",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0131,
+   "t": "The Bitcoin network has successfully processed its one billionth transaction on May 5th at 9:34 pm UTC. Bitcoin has processed 178,475 daily transactions in 5,603 days. Lightning Network, a Bitcoin lay",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0184,
+   "t": "Bitcoin's price has been on a steady growth trajectory since the beginning of the year. Since last Friday, Bitcoin has seen a more than 10% increase. Grayscale\u2019s GBTC ETF saw a $63 million inflow for ",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0184,
+   "t": "Shiba Inu (SHIB) and Bitcoin (BTC) are showing signs of a price rebound. Lucie has urged the cryptocurrency community to closely monitor the prices of the two digital currencies. Shiba inu has increas",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.0184,
+   "t": "Bitcoin has crossed the 64,000 USDT benchmark and is now trading at 64,010.121094 USDT, with a 1.46% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 8:20 AM on May 07, 2024.",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0304,
+   "t": "Bitcoin's price has fluctuated between $65,500 to $62,830 on Monday and $63,600 today. Bitcoin's daily chart shows Bitcoin registering another lower high since mid-March. MicroStrategy CEO Michael Say",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.0245,
+   "t": "Swan Bitcoin has discontinued its managed mining unit and cut staff across several units. The company will still offer bitcoin financial services and free bitcoin education. Cory Klippsten said in a s",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0245,
+   "t": "Trump is scheduled to speak at the largest cryptocurrency conference in Nashville later this week. Trump is considered favorable to the sector and is going to be speaking at the conference. He is cons",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0245,
+   "t": "The price of bitcoin has risen above $68,000 as investors got more hyped about several developments, including a stamp of approval from former President Donald Trump. The price is now above $70,000. T",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0084,
+   "t": "BlackRock, Fidelity and other big money managers will start offering ether ETFs to everyday investors. The final approval from regulators has been given to start offering the exchange-rate exchange-tr",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.0062,
+   "t": "Tesla's stock is sliding after posting mixed second-quarter results. US new home sales fell short of economist expectations for June. Google has backtracked on its pledge to eliminate third-party cook",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0062,
+   "t": " the trendline connecting 2016 and 2017 lows has consistently offered support since January since January. The trendline has consistently supported since January and 2017 and 2017 to January and Janua",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.0015,
+   "t": "June's PCE data supports the possibility of an interest rate cut in September. The average rate on the 30-year fixed mortgage ticked up to 6.78% over the last week. The Bitcoin 2024 conference is taki",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0015,
+   "t": "The latest price moves in bitcoin (BTC) and crypto markets in context for July 26, 2024. First Mover is CoinDesk\u2019s daily newsletter that contextualizes the latest actions in the crypto markets. The ne",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0065,
+   "t": "Cantor Fitzgerald will open a bitcoin financing business. The company already does business with stablecoin issuer Tether. Cantor Fitzgerald is well known on Wall Street as one of the world's biggest ",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.0065,
+   "t": "More than a dozen Democrats in the U.S. House of Representatives are pushing their national committee to adopt a pro-crypto stance, according to a letter they sent on Saturday. The list of candidates ",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0093,
+   "t": "Bitcoin traded at nearly $70,000 at the Bitcoin Conference on Saturday. Donald Trump was the keynote speaker at the conference. He was talking to about 20,000 die-hard bitcoin believers and industry e",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0093,
+   "t": "The Federal Reserve will hold its 2-day meeting starting July 30th. BlackRock Senior Portfolio Manager Tom Becker and Wedbush Managing Director, Equity Research - Restaurants Nick Setyan join the show",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.0093,
+   "t": "One Trading has received a new license for the only perpetual futures trading venue in the EU and the first cash-settled perpetuals platform in Europe. One Trading is the only stock exchange in Europe",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0239,
+   "t": "The proposed legislation regarding a strategic reserve of bitcoin for the U.S. government poses more questions than answers at the moment. The proposed legislation poses many questions and answers for",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0114,
+   "t": "The purchase of bitcoin for a new strategic reserve would be financed partly by revaluing Federal Reserve's gold certificates. The plan proposes establishing a \"Bitcoin Purchase Program\" of up to 200,",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0603,
+   "t": "The cryptocurrency experienced two-way price volatility in July. Large holders resorted to bargain hunting in July as the price volatility was very high. The price volatility has been stable since the",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0603,
+   "t": "The large-cap token's price has barely moved since Trump's speech on Saturday. The price hasn't moved since the speech by the Republican nominee Trump on Saturday, and hasn't changed much since then. ",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.012,
+   "t": "Former U.S. President Donald Trump and a number of lawmakers spoke at the Bitcoin Nashville conference over the weekend. The biggest news everyone has been talking about was Trump and Cynthia Lummis' ",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0378,
+   "t": "Bitcoin remains a speculative asset, according to one influential investor, and it's not worth investing in it at the moment. It's still too speculative to invest in it now. It is not a useful investm",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0378,
+   "t": " the FTSE 100 suffered its worst drop in more than a year. The global stock markets have been hit by the global stock market has been hit.    the UK stock markets. The FTSe 100 has suffered the worst ",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.018,
+   "t": "Bitcoin and ether had their worst day since November 2022. Bitcoin was trading at $53,500 late afternoon ET on Monday, down 10% from the same time on Sunday. Bitcoin is not a safe haven in times of ma",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": -0.018,
+   "t": "The stock market was rocked on Monday. The biggest problem for investors is the Federal Reserve. The stock market is under pressure due to the Fed's rate hike plans. The market has been under pressure",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.018,
+   "t": "The global market has had a big sell-off in Monday's trading session. Mark Newton believes there are still healthy areas of the market that are still working well. The dollar is going to start to impr",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.1214,
+   "t": "CoinShares' total assets under management almost doubled from $2.7billion to $5.3billion. The company has almost $5 billion in cash under management. The firm's total assets are now $7.3 billion. The ",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0135,
+   "t": "The US equity market is bouncing back from this week's sell-off. Warner Bros. shares are lower this morning after the media company missed on second quarter revenue estimates and wrote down its linear",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0011,
+   "t": "It's been a rocky week for bitcoin. The cryptocurrency has since regained some ground and is trading above $60,000 on Friday morning. Yahoo Finance markets and data editor Jared Blikre takes a closer ",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.0011,
+   "t": "The latest investor updates on the stocks that are trending on Friday are listed here. The stock prices on Friday will be updated on Friday at 8.30 pm. The market is moving on Friday. The markets are ",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": 0.0211,
+   "t": "Gordon Law Partner Andrew Gordon explains to Wealth! the tax strategies for crypto investors and how the industry might change following the 2024 presidential election. Gordon hopes politicians will s",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0211,
+   "t": "The BOJ recently raised rates for the first time in over a decade, destabilizing global markets, including bitcoin. The rate hike destabilized global markets including bitcoin and other currencies inc",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0309,
+   "t": "Marathon Digital is proposing a private offering of $250 million of convertible senior notes. The net proceeds from that sale will be used for general corporate purposes. Market Domination hosts Josh ",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.02,
+   "t": "The EOF proposal is a series of smaller EIPs aimed at updating and improving the Ethereum Virtual Machine (EVM), the programming environment that executes smart contracts on the blockchain. The VM is ",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.0232,
+   "t": "This week, Yahoo Finance broke down the latest news surrounding cryptocurrency. Andrew Gordon gave investors advice on the best tax strategies for their crypto investments. Bitcoin prices dipped below",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0081,
+   "t": "Early August sell-offs significantly impacted tech stock trades, prompting investors to seek buying opportunities in the dip or to rotate out of Big Tech. Robinhood Financial head of investment strate",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.013,
+   "t": "The mining business is a standout in the sector in terms of exahash growth, operating performance and low power costs, according to the report. The report is based on the results of a study on the min",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.013,
+   "t": "Apparent demand has slowed since early April and even dipped into negative territory this month, according to the firm's data. The firm notes that demand has been declining since April and has been in",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": 0.0615,
+   "t": "Four takeaways from CoinDesk\u2019s interview in New York yesterday, including four takeaways about the interview in NY yesterday. The interview took place yesterday at CoinDesk's headquarters in NY. The i",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0615,
+   "t": "Today's Asking for a Trend is hosted by Josh Lipton. The weakening US dollar has sparked renewed interest in bitcoin (BTC-USD). RYZE Managing Partner Matthew Graham dissects the cryptocurrency market.",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.008,
+   "t": "The fund will be available to corporates, businesses and professional investors. The fund is set for launch in September and is available to corporate, businesses, professional investors and others. I",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.008,
+   "t": "The funding round was led by Framework Ventures, Lightspeed Faction, Arrington Capital and Hivemind Capital. SxT's total backing is now $50 million. The funding round is the latest round to be funded ",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0061,
+   "t": "Stacks, the Bitcoin layer-2 blockchain, has started the Satoshi upgrade. The upgrade is named after Bitcoin's pseudonymous creator Satoshi Nakamoto. Stacks is rolling out sBTC, a bridging asset that a",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0061,
+   "t": "MicroStrategy continues its aggressive investment in bitcoin (BTC-USD). Defiance ETFs CEO Sylvia Jablonski shares her outlook on MicroStrategy's stock moving forward on Catalysts. She notes that bitco",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "sell",
+   "r": 0.0061,
+   "t": "Bitcoin's market dynamics have taken a sharp turn, with traders experiencing significant liquidations as the cryptocurrency struggles to maintain levels above $60,000. In the past 24 hours, nearly 50,",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0061,
+   "t": "42 publicly traded companies in the United States now hold a total of 335,249 bitcoins with the value soaring to $20 billion. The value of bitcoins held by these companies was $7.2 billion a year ago,",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0061,
+   "t": "The Bitcoin expansion network Mezo has introduced its yield token, stBTC. Users can mint stBTC by depositing BitGo's wrapped Bitcoin (WBTC) or Bitcoin-backed tBTC on the Mezo platform and minting stBT",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.0061,
+   "t": "Bitcoin has crossed the 60,000 USDT benchmark and is now trading at 60,061.53125 USDT, with a narrowed narrowed 4.14% decrease in 24 hours. Bitcoin is trading on Binance Market Data on August 28, 2024",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0061,
+   "t": "Grayscale transferred 700 BTC worth $41.95 million to an unidentified address 14 minutes earlier on August 28th, according to BlockBeats' monitoring. The address belongs to Grayscale and is located at",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0045,
+   "t": " at least $160 million in illicit volumes since 2019, according to a new study by TRM Labs. The cash-to-crypto industry is dominated by crypto ATMs.    has processed at least  $160m in illicit volume ",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.0045,
+   "t": "The Grayscale Bitcoin Mini Trust experienced its first-ever outflow since its inception. The net outflow amounted to $8.77 million, equivalent to 147 BTC, according to Trader T's monitoring by Trader ",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0045,
+   "t": "NCR Atleos has integrated LibertyX to support Bitcoin withdrawals at its ATMs. The bank operates more than 30,000 ATMs and allows access for users to withdraw Bitcoin directly from LibertyX-enabled AT",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": -0.0045,
+   "t": "Bitcoin has dropped below 59,000 USDT and is now trading at 58,983.160156 USDT with a narrowed 0.38% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 18:54 PM(UTC) on August 29, 2024",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0045,
+   "t": "Warren Buffett's Berkshire Hathaway has reached a valuation close to the entire Bitcoin market after surpassing $1 trillion mark on August 28th. Bitcoin's market cap stands at $1.18 trillion. Warren B",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": -0.0025,
+   "t": "Bitcoin has dropped below 58,000 USDT and is now trading at 57,979.691406 USDT, with a 5.03% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 15:38 PM (UTC).",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": -0.0025,
+   "t": "There are more than 110 companies involved in Bitcoin-related activities across Africa. Bitcoin Magazine reports on X platform that more than 100 companies are currently involved in such activities in",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0025,
+   "t": "Bitcoin has fallen from its height above $73,000 to below $60,000 after four-straight days of losses. Still, bitcoin is up over 114% compared to this time last year. Anthony Pompliano explains why he ",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0025,
+   "t": "The amount of Bitcoin stored on cryptocurrency exchanges has reached a new supply low. Bitcoin reserves on exchanges have decreased by 12.9% since January 1. The transfer of Bitcoin to cold wallets in",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "sell",
+   "r": -0.0025,
+   "t": "Bitcoin's price dropped below $59,000 on Friday, marking a weekly loss of over 3.5%. BlackRock's iShares Bitcoin Trust (IBIT), the world's largest bitcoin fund by assets under management, recorded its",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0025,
+   "t": "A dormant Bitcoin address holding 23.18 BTC has been activated after 13.1 years. The value of these Bitcoins is approximately $1,359,147. This information was monitored by Whale Alert on Odaily's requ",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0025,
+   "t": "Australia's Monochrome spot Bitcoin ETF has reached a holding of 125 BTC. The increase in holdings comes amid a period of heightened attention to Bitcoin and other cryptocurrencies. The Bitcoin ETF's ",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0279,
+   "t": "Bitcoin's next move must print a bullish 'higher high' on the price chart to keep its uptrend intact. Bitcoin is trading at $59,218 at the time of publication, recovering from a dip to $57,925 in the ",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.0312,
+   "t": "Bitcoin long-term holders increased their holdings by 262,000 BTC in August, bringing their total to 14.82 million BTC, 75% of the total supply. Seven out of the top ten anonymous Bitcoin wallets have",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0312,
+   "t": "The Puell Multiple index is fluctuating between two critical levels. The range between 0.6 and 0.8 is known as the Decision Zone. Bitcoin is currently trading at $58,416, down 8.98% over the past seve",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0312,
+   "t": "Bitcoin has dropped below 58,000 USDT and is now trading at 57,996 USDT, with a narrowed 1.84% decrease in 24 hours. Bitcoin is trading at 10:17 PM (UTC) on Sep 01, 2024, at Binance Market Data.",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.0284,
+   "t": "Bitcoin's price is near $57,000 this week. The monthly and weekly close trigger a downside in BTC's price, leading some to question whether the market is in for another \"Rektember.\" The Puell Multiple",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0284,
+   "t": "The public testnet will continue to operate even after the mainnet launch. Fractal Bitcoin has announced on the X platform that the testnet is still available on X platform and will be available even ",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0284,
+   "t": "Bitcoin has crossed the 58,000 USDT benchmark and is now trading at 58,081.101563 USDT with a narrowed narrowed 0.41% decrease in 24 hours on Sep 02, 2024, at 8:21 AM(GMT) on Binance Market Data.",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0284,
+   "t": "September has historically been a negative month for Bitcoin. If the Federal Reserve were to cut interest rates in September, it could help Bitcoin overcome its negative historical trend. The US dolla",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.0284,
+   "t": "Memecoin DOGE has lost 5% in the past 24 hours due to the Labor Day holiday in the U.S. and a 5% slide in the last 24 hours before the holiday. The market is closed for the holiday for the next 24 hou",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0284,
+   "t": ", QCP Capital's analysis suggests Bitcoin's price could fall to around $54,000 this year. The data shows that the U.S. unemployment claims on September 5 and the non-farm payrolls report on September ",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.0094,
+   "t": "On September 3, Bitcoin ETFs experienced a net outflow of 1,323 BTC, equivalent to approximately $76.54 million. ARK 21Shares saw a significant outflow 1,104 BTC, valued at around $63.89 million. Curr",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0094,
+   "t": "September is a tough month for cryptocurrencies. Bitcoin is starting the first trading day of September below the $60,000 level. Sean Farrell advises investors to watch the Federal Reserve's next move",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0094,
+   "t": "September is usually a bearish month for cryptocurrencies and other asset classes. Bitcoin has posted positive returns in October in 8 out of the last 9 years with an average gain of 22.9%. QCP Capita",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0094,
+   "t": "An address labeled as ARK Invest: ARKB 21Shares Bitcoin ETF transferred 2,159 BTC to an address beginning with 'bc1qgu' about 4 minutes ago. The value of the transferred Bitcoin is estimated to be aro",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0312,
+   "t": "Bitcoin is struggling to reach new all-time highs after the block subsidy halving event in April 2024. Bitcoin's previous peak from 2021 was at $73,800. Bitcoin is still trading 10% below its previous",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": -0.0312,
+   "t": "Bitcoin has dropped below 56,000 USDT and is now trading at 55,756.769531 USDT with a narrowed 6.01% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 01:05 AM (GMT) on Sep 04, 2024.",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0312,
+   "t": "Mark Karpeles is launching a new crypto exchange called EllipX, taking the best modern practices of exchanges and lessons learned from Mt. Gox as well as continuing work on a crypto ratings agency cal",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0312,
+   "t": "The data monitored by Farside Investors revealed mixed fund flows for U.S. spot Bitcoin and Ethereum ETFs as of September 4. Bitcoin and Ether Strategy ETFs experienced a net inflow of $9.5 million an",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.0312,
+   "t": "As the cryptocurrency market matures, investors are looking for yield-generating methods to improve their portfolios. One of the most promising developments has been the rise of tokenized money market",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": -0.0312,
+   "t": "The SEC will extend the final decision deadline for the 7RCC Spot Bitcoin ETF and Carbon Credit Futures ETF to November 21. The SEC states that it is necessary to designate a longer period to issue an",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": -0.0312,
+   "t": "Cantor Fitzgerald CEO Howard Lutnick has said that traditional financial companies are reluctant to engage in bitcoin transactions due to current U.S. regulatory requirements. Cantor Fitzgerald plans ",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0394,
+   "t": "HIVE Digital Technologies has released its unaudited operational report for August 2024. The company mined 112 Bitcoins during the month and bought 1,000 Bitmain S21 Pro Antminers to upgrade its exist",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0394,
+   "t": "Bitcoin has crossed the 58,000 USDT benchmark and is now trading at 58,018.988281 USDT with a narrowed 0.86% increase in 24 hours. Bitcoin is trading on Sep 5, 2024, at 00:02 AM (GMT).",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": -0.0394,
+   "t": "Core Scientific has released its unaudited production and operations report for August 2024. The company mined 358 BTC in August, a decrease from the 411 BTC produced in July 2024. Core Scientific sol",
+   "y": "sell"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": -0.0394,
+   "t": "If Bitcoin's price falls below $57,000, the cumulative liquidation intensity of long positions on major centralized exchanges will reach $845 million. If Bitcoin surpasses $59,000 the same amount will",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0394,
+   "t": "The market is pricing in a 50% probability of a 50 basis point rate cut in September and expects a total of 4.5 rate cuts in 2024. Bitcoin (BTC) rose to $58,500 and ETH (ETH) approached $2,500 during ",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0035,
+   "t": "Bitcoin has dropped below 55,000 USDT and is now trading at 54,942.019531 USDT, with a 3.33% decrease in 24 hours. Bitcoin is trading on Binance Market Data at 14:17 PM (UTC).",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0035,
+   "t": "10% of US-based companies are likely to convert 1.5% of their treasury reserves to Bitcoin over the next 18 months. Traditional corporate treasury strategies rely on cash and other short-term cash equ",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0035,
+   "t": "On Sep 06, 2024, at 00:51 AM (UTC), Bitcoin (BTC) dropped below 56,000 USDT and is now trading at 55,996 USDT, with a narrowed 3.69% decrease in 24 hours. Binance Market Data shows Bitcoin has dropped",
+   "y": "hold"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0035,
+   "t": "Andr\u00e9 Dragosch, Bitwise's Head of European Research, shared insights on social media regarding the current state of Bitcoin supply. Corporate purchasing has nearly absorbed all newly mined Bitcoin. An",
+   "y": "hold"
+  },
+  {
+   "b": "buy",
+   "l": "buy",
+   "r": 0.0035,
+   "t": "Bitcoin's price is experiencing bearish pressure as the total cryptocurrency market cap drops below $2 trillion. Bitcoin has not closed a weekly candle below the 50-weekly EMA since October 2023. If B",
+   "y": "hold"
+  },
+  {
+   "b": "hold",
+   "l": "sell",
+   "r": 0.013,
+   "t": "Bitcoin is experiencing a significant downturn. Bitcoin's price correction is linked to new wallet activity and long-term holders exiting at high prices. The ISM Manufacturing Index confirms a cyclica",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "hold",
+   "r": 0.013,
+   "t": "The Fractal Bitcoin mainnet is now live. Users need to update to UniSat Extension v1.4.6 to access the new mainnet. UniSat mentioned that more features will be introduced in the future. BlockBeats rep",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0397,
+   "t": "Russia has successfully mined 54,000 Bitcoins in 2023, with a value exceeding $3 billion. The recent legalization of cryptocurrency mining has sparked a surge in investor interest in the sector. Russi",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": 0.0397,
+   "t": "Fractal Bitcoin has revealed its tokenomics model as it prepares for its mainnet launch in approximately 11 hours. The model outlines the distribution of its total token supply of 210 million tokens, ",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": 0.011,
+   "t": "Orman believes Bitcoin's popularity will increase as younger people make more money and mature. Orman is a best-selling author and host of the Women & Money podcast. She believes Bitcoin is popular am",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "sell",
+   "r": 0.011,
+   "t": "Bitcoin exchange-traded funds (ETFs) launched in the US earlier this year. The spot Bitcoin ETF market now holds around $48 billion in assets under management, down from its peak of $61 billion in Mar",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": 0.011,
+   "t": "\"The difference in election outcome could determine the destiny of the industry,\" a Bernstein analyst said. The difference in the election outcome may determine the fate of the crypto industry, accord",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.011,
+   "t": "WisdomTree's Bitcoin Exchange-Traded Fund transferred 3,653 BTC to an address beginning with bc1q9v last week. The transferred Bitcoin is valued at approximately $2.0979 million. This marks the first ",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.011,
+   "t": "The Bitcoin Layer 2 network Merlin Chain has released its semi-annual report. The network's cross-chain volume reached $16 billion, with 1.9 million on-chain addresses and 12.7 million transactions wi",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "sell",
+   "r": 0.011,
+   "t": "US Bitcoin exchange-traded funds have experienced their longest run of daily net outflows since their launch earlier this year. Bitcoin's price movements have become more closely aligned with fluctuat",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0053,
+   "t": "Bitcoin (BTC) was rising on Tuesday as the crypto market continued its rebound from last week's fear-inducing plunge. Bitcoin is trading at $1,8, and Bitcoin is at $2,8.   \u00a0  .   and  ",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0053,
+   "t": "The latest Bitcoin node rankings reveal a significant presence of German IP addresses. Three out of the top eight Bitcoin nodes are located in Germany. HODL15 Capital announced on the X platform that ",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0053,
+   "t": "The recent plunge in the price of bitcoin was accompanied by a lot of net outflows from the 12 U.S. spot exchange-traded funds (ETFs). It's more likely a sign of healthy growth than worrying on its fa",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": -0.0053,
+   "t": "On September 9, U.S.-based spot Bitcoin exchange-traded funds (ETFs) experienced a significant rebound with inflows totaling $28.6 million. BlackRock's iShares Bitcoin Trust (IBIT) saw its third-ever ",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0053,
+   "t": "Bitcoin has crossed the 57,000 USDT benchmark and is now trading at 57,039.988281 USDT with a narrowed 3.38% increase in 24 hours. Bitcoin is trading on Sep 10, 2024, 15:25 PM(UTC).",
+   "y": "sell"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": -0.0053,
+   "t": "Bitcoin has crossed the 57,000 USDT benchmark and is now trading at 57,042.019531 USDT, with a narrowed 4.06% increase in 24 hours on Sep 10, 2024, at 07:23 AM (UTC). ",
+   "y": "sell"
+  },
+  {
+   "b": "hold",
+   "l": "hold",
+   "r": 0.0137,
+   "t": "Harris and Trump had plenty to say about the presidential debate Tuesday night. They didn't mention crypto, but crypto folk had a lot to say on the subject. They are not against crypto. They think it'",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0137,
+   "t": "Trump Media & Technology Group stock plunged as much as 18% on Wednesday to a record low since going public in March. The stock has since recovered to a new record low of 8.5% on Thursday. The company",
+   "y": "buy"
+  },
+  {
+   "b": "buy",
+   "l": "sell",
+   "r": 0.0137,
+   "t": "Bitcoin slides as investors react to the US presidential debate between Democratic nominee Kamala Harris and Republican rival Donald Trump. Most read from Bloomberg: Americans voted their way into a h",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0137,
+   "t": " Matrixport has released a chart showing that the influence of the next US president on Bitcoin is more on the regulatory environment of the Bitcoin ecosystem rather than on Bitcoin itself. During the",
+   "y": "buy"
+  },
+  {
+   "b": "hold",
+   "l": "buy",
+   "r": 0.0137,
+   "t": "CleanSpark has invested $27.5 million to acquire seven Bitcoin mining facilities in Tennessee. This is expected to increase CleanSpark's current hash rate by over 22%, reaching 5 ETH/s. The company an",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0137,
+   "t": "A dormant Bitcoin address containing 108 BTC has been activated after 10.7 years. The value of the Bitcoin in this address is approximately $6,6,061,736. The address has been active for 10 years and h",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0137,
+   "t": "The correlation between Bitcoin and gold has significantly decreased recently. Gold prices have surged to a new high of over $2,500 per ounce. Bitcoin prices have been declining. The S&P 500 index has",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "sell",
+   "r": 0.0421,
+   "t": "Bitcoin has dropped below 58,000 USDT and is now trading at 57,972 USDT with a narrowed narrowed 0.87% increase in 24 hours. Bitcoin is trading at 18:53 PM(UTC) on Sep 12, 2024, 18.",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0421,
+   "t": "The Monochrome Bitcoin ETF (IBTC) in Australia has reached a holding of 136 BTC as of September 11th. This information was confirmed through official sources on September 12th. BlockBeats has confirme",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "hold",
+   "r": 0.0421,
+   "t": "Bitcoin has dropped below 58,000 USDT and is now trading at 57,996 USDT, with a narrowed narrowed 2.48% increase in 24 hours. Bitcoin is trading at 10:31 AM(UTC) on Sep 12, 2024, 10:30 AM(GMT).",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0421,
+   "t": "According to data from mempool.space, transaction fees on the Fractal Bitcoin mainnet are steadily increasing. Several blocks have seen fees surpassing 2400 Sat/byte. The current network fees are 2291",
+   "y": "buy"
+  },
+  {
+   "b": "sell",
+   "l": "buy",
+   "r": 0.0421,
+   "t": "Bitcoin has crossed the 58,000 USDT benchmark and is now trading at 58,302 USDT, with a narrowed 2.67% increase in 24 hours. Bitcoin is trading at 02:00 AM (UTC) on Sep 12, 2024, on Binance Market Dat",
+   "y": "buy"
+  }
+ ],
+ "votes": {
+  "baseline": [
+   "buy",
+   "hold",
+   "sell",
+   "sell",
+   "sell",
+   "sell",
+   "sell",
+   "sell",
+   "sell",
+   "sell",
+   "sell",
+   "sell",
+   "sell",
+   "buy",
+   "sell",
+   "buy",
+   "sell",
+   "sell",
+   "sell",
+   "hold",
+   "sell",
+   "hold",
+   "sell",
+   "buy",
+   "hold",
+   "sell",
+   "sell",
+   "sell",
+   "hold",
+   "sell",
+   "sell",
+   "buy",
+   "buy",
+   "sell",
+   "buy",
+   "buy",
+   "buy",
+   "hold",
+   "sell",
+   "buy",
+   "buy",
+   "sell",
+   "sell",
+   "sell",
+   "buy",
+   "sell",
+   "sell",
+   "hold",
+   "buy",
+   "buy",
+   "sell",
+   "sell",
+   "hold",
+   "sell",
+   "buy",
+   "buy",
+   "sell",
+   "sell",
+   "sell",
+   "sell",
+   "buy",
+   "hold",
+   "hold",
+   "hold",
+   "hold",
+   "sell",
+   "sell",
+   "buy",
+   "hold",
+   "sell",
+   "buy",
+   "sell",
+   "buy",
+   "sell",
+   "sell",
+   "buy",
+   "sell",
+   "sell",
+   "hold",
+   "buy",
+   "sell",
+   "buy",
+   "sell",
+   "sell",
+   "buy",
+   "sell",
+   "sell",
+   "buy",
+   "buy",
+   "buy",
+   "sell",
+   "buy",
+   "hold",
+   "buy",
+   "buy",
+   "sell",
+   "buy",
+   "hold",
+   "sell",
+   "buy",
+   "hold",
+   "hold",
+   "sell",
+   "sell",
+   "sell",
+   "sell",
+   "sell",
+   "buy",
+   "buy",
+   "sell",
+   "hold",
+   "sell",
+   "sell",
+   "sell"
+  ],
+  "llm": [
+   "buy",
+   "hold",
+   "hold",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "sell",
+   "buy",
+   "buy",
+   "hold",
+   "buy",
+   "buy",
+   "hold",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "sell",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "sell",
+   "buy",
+   "buy",
+   "sell",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "sell",
+   "buy",
+   "buy",
+   "sell",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "buy",
+   "sell",
+   "buy",
+   "buy",
+   "hold",
+   "buy",
+   "hold",
+   "hold",
+   "hold",
+   "buy",
+   "hold",
+   "hold",
+   "buy",
+   "hold",
+   "buy",
+   "hold",
+   "hold",
+   "sell",
+   "buy",
+   "sell",
+   "buy",
+   "sell",
+   "hold",
+   "sell",
+   "buy",
+   "sell",
+   "sell",
+   "buy",
+   "buy",
+   "buy",
+   "hold",
+   "hold",
+   "hold",
+   "hold",
+   "buy",
+   "buy",
+   "buy",
+   "sell",
+   "hold",
+   "hold",
+   "hold",
+   "hold",
+   "sell",
+   "hold",
+   "hold",
+   "sell",
+   "hold",
+   "sell",
+   "buy",
+   "buy",
+   "sell",
+   "hold",
+   "hold",
+   "hold",
+   "sell",
+   "buy",
+   "buy",
+   "hold",
+   "buy",
+   "buy",
+   "hold",
+   "hold",
+   "sell",
+   "buy",
+   "sell",
+   "buy"
+  ]
+ }
+}

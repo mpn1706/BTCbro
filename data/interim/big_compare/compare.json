@@ -1,0 +1,51 @@
+{
+ "split_hash": "big-imadallal-thr0005-emb1",
+ "sampling": "systematic_step_4 (n=334)",
+ "prompt_version": "v2",
+ "n_test": 334,
+ "baseline": {
+  "macro_f1": 0.316,
+  "accuracy": 0.35,
+  "cm_3x3_buy_hold_sell": [
+   [
+    37,
+    26,
+    75
+   ],
+   [
+    19,
+    12,
+    22
+   ],
+   [
+    40,
+    35,
+    68
+   ]
+  ]
+ },
+ "llm": {
+  "macro_f1": 0.283,
+  "accuracy": 0.326,
+  "cm_3x3_buy_hold_sell": [
+   [
+    74,
+    29,
+    35
+   ],
+   [
+    33,
+    11,
+    9
+   ],
+   [
+    80,
+    39,
+    24
+   ]
+  ],
+  "parse_ok": "333/334",
+  "mean_wall_s": 10.5
+ },
+ "verdict": "baseline >= LLM en macro-F1 (honesto: test-once, misma muestra)"
+}

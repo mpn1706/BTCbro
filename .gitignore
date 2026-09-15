@@ -18,3 +18,9 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .venv/
+
+# LLM runtime binaries + model downloads (see tools/real_data.md)
+tools/llama.cpp/
+tools/__pycache__/
+logs/
+data/interim/*.jsonl

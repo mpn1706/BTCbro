@@ -1,0 +1,70 @@
+{
+ "split": {
+  "train_end": "2026-06-10",
+  "val_end": "2026-06-20",
+  "thr": 0.005,
+  "embargo": 1
+ },
+ "n": {
+  "train": 44,
+  "val": 20,
+  "test": 24
+ },
+ "baseline_test": {
+  "macro_f1": 0.216,
+  "accuracy": 0.458,
+  "per_class_f1": {
+   "buy": 0.0,
+   "hold": 0.0,
+   "sell": 0.647
+  },
+  "cm_3x3_buy_hold_sell": [
+   [
+    0,
+    1,
+    1
+   ],
+   [
+    0,
+    0,
+    6
+   ],
+   [
+    1,
+    4,
+    11
+   ]
+  ]
+ },
+ "llm_test": {
+  "macro_f1": 0.301,
+  "accuracy": 0.333,
+  "per_class_f1": {
+   "buy": 0.2,
+   "hold": 0.286,
+   "sell": 0.417
+  },
+  "cm_3x3_buy_hold_sell": [
+   [
+    1,
+    0,
+    1
+   ],
+   [
+    2,
+    2,
+    2
+   ],
+   [
+    5,
+    6,
+    5
+   ]
+  ],
+  "parse_ok": "24/24",
+  "mean_wall_s": 7.9
+ },
+ "prompt_version": "v2",
+ "model": "Qwen3-1.7B-Q4_K_M",
+ "note": "honest near-random both; test read once 2026-09-15"
+}

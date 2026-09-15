@@ -1,36 +1,89 @@
-# Bitcoin News Signal (educational slice)
+# ₿ BTC News Signal + LLM directo (educativo)
 
-Small local model mapping a BTC news headline (+ BTC/EUR price context)
-to `buy` / `sell` / `hold`. Learning outcome, not trading performance.
-Output is never investment advice; live trading is out of scope.
+Modelo local que analiza noticias de Bitcoin y sugiere **comprar**, **vender** o
+**mantener**, con web comparativa de 3 métodos, backtest y simulador.
+Proyecto de curso de *vibe coding*: el objetivo es demostrar un proceso de ML
+honesto y reproducible, no lograr un modelo de trading real.
 
-## Pipeline (leakage-first)
+> ⚠️ **Aviso**: proyecto educativo. No es asesoramiento financiero. Nada opera
+> de verdad. En ventanas alcistas, HODL le gana a tradear señales flojas
+> (la propia web lo muestra: 1.32x > 0.92x > 0.89x).
 
-Kaggle news + Kraken `XXBTZEUR` daily → UTC normalize + dedup →
-backward join-asof (features past-only) → 24h forward label →
-temporal split + purge + embargo → TF-IDF + balanced LogReg (CPU,
-`SEED=42`) → per-class eval → inference-only CLI.
+## Qué hace
 
-- Train 2018–2022 learns weights; val 2023 chooses
-  `flat_threshold ∈ {0.003, 0.005, 0.01}` / `embargo ∈ {1, 2}` /
-  TF-IDF / `C` by macro-F1; test 2024+ is read exactly once.
-- Tuning on test is failure regardless of score (see `DECISION_LOG.md`).
+1. Descarga noticias (Kaggle) y precio diario (Kraken `XXBTZEUR`, Kraken en vivo).
+2. Cruza cada noticia con el precio: etiqueta `buy`/`sell`/`hold` según el
+   retorno 24h (`ret_24h` vs umbral `flat_threshold`).
+3. Entrena un baseline TF-IDF + Regresión Logística (scikit-learn, CPU).
+4. Corre un LLM local (Qwen3-1.7B, llama.cpp, CPU) como clasificador directo.
+5. Compara ambos en el mismo split honesto y lo muestra en la web con velas,
+   señales, backtest, simulador de monto y testigo HODL.
 
-## Run
+## Regla anti-trampa (lo que vale del proyecto)
+
+Join-asof pasado (nunca vela futura) · split cronológico + purge 24h + embargo ·
+valid elige, test se lee **una sola vez** · accuracy-alone no vale (solo
+per-class + macro-F1 + matriz 3×3). Un negativo honesto > un positivo con leakage.
+
+## Resultado
+
+Test grande (1334 → submuestra 334, thr 0.005): baseline macro-F1 **0.316** vs
+LLM **0.283** → gana el baseline; el LLM zero-shot queda bajo el azar (0.33).
+Ver `data/interim/big_compare/compare.json` y `DECISION_LOG.md`.
+
+## Cómo correrlo en tu computadora
 
 ```bash
-python -m pytest
-python -m src.cli --title "Bitcoin ETF inflows hit record" --price 60000 --model models/latest
-btc-signal --title "Bitcoin ETF inflows hit record" --price 60000
+git clone https://github.com/mpn1706/btc-inference.git
+cd btc-inference
+python -m venv .venv
+.venv\Scripts\Activate.ps1        # Windows
+pip install -e .                  # instala btc-signal
+pip install pytest                # si no lo tenés
+python -m pytest                  # 70+ tests (sin red, sin GPU)
 ```
 
-`--price` is display context only, not a trained feature (`--help`).
-Exit codes: `0` ok · `2` bad input · `3` missing/corrupt artifact · `1` internal.
+CLI (baseline y LLM):
 
-## Layout
+```bash
+btc-signal --title "Bitcoin ETF inflows hit record" --price 60000
+btc-signal --title "..." --price 60000 --backend llm
+```
 
-`src/config.py` (seed/params) · `src/ingest_*.py` · `src/dataset.py`
-(join/label/split + `data_card.md`) · `src/train.py` · `src/evaluate.py`
-(per-class P/R, macro-F1, 3×3 matrix) · `src/cli.py` → `btc-signal`.
+Web comparativa (sin servidor no carga el `data.json`; con servidor sí):
 
-EDUCATIONAL DEMO ONLY — NOT INVESTMENT ADVICE. NO LIVE TRADING.
+```bash
+cd web && python -m http.server 8000
+# abrir http://localhost:8000
+```
+
+Regenerar datos de la web (determinista):
+
+```bash
+PYTHONPATH=. python tools/export_web.py
+```
+
+El modelo LLM (~1.1 GB) y los CSV crudos **no** viajan en git (ver `.gitignore`);
+la guía dice cómo conseguirlos (`tools/real_data.md`).
+
+## Estructura
+
+```
+src/            # config, ingesta, dataset honesto, train, evaluate, cli,
+                # llm_backend (Qwen3 CPU), compare, backtest
+tests/          # 70+ tests espejo del contrato (incluye fixtures tiny)
+web/            # index.html fijo + data.json generado (velas, backtest, precedentes)
+tools/          # export_web, corridas, spkes documentados, guías de datos
+prompts/        # prompts versionados del LLM (v2, v3 en duelo)
+docs/           # guia-usuario.md + DECISION_LOG.md en raíz
+openspec/       # artefactos SDD (proposal/spec/design/tasks/verify)
+```
+
+## Tecnologías
+
+Python (pandas, scikit-learn, joblib, requests) · llama.cpp (CPU) · HTML/CSS/JS
+vainilla (sin dependencias) · pytest con TDD estricto.
+
+## Guía de usuario
+
+Ver [docs/guia-usuario.md](docs/guia-usuario.md) (web, CLI, metodología y límites).

@@ -12,6 +12,7 @@ from pathlib import Path
 
 import joblib
 
+from src.llm_backend import predict_llm
 from src.train import combine_text
 
 DISCLAIMER = "DISCLAIMER: Educational demo only — not investment advice. No live trading."
@@ -69,7 +70,34 @@ def build_parser():
                         help="Run dir or `latest` pointer (default: models/latest).")
     parser.add_argument("--json", action="store_true",
                         help="Emit machine-readable JSON instead of text.")
+    parser.add_argument("--backend", default="baseline",
+                        choices=["baseline", "llm"],
+                        help="Predictor backend (default: baseline). "
+                             "llm uses the CPU-only Qwen3 backend (experimental).")
     return parser
+
+
+def _main_llm(parser, args, price):
+    """LLM backend path (PR2 experimental, CPU-only). Exit 3 if GGUF missing."""
+    try:
+        out = predict_llm(args.title, args.body, price)
+    except FileNotFoundError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 3
+    if args.json:
+        print(json.dumps({"action": out["action"], "conf": out["conf"],
+                          "reason_short": out["reason_short"],
+                          "parse_ok": out["parse_ok"],
+                          "prompt_version": out["prompt_version"],
+                          "price_ctx": price, "price_currency": "EUR",
+                          "backend": "llm", "disclaimer": DISCLAIMER}))
+    else:
+        print(f"action: {out['action']}")
+        print(f"conf: {out['conf']:.2f} reason: {out['reason_short']}")
+        print(f"parse_ok: {out['parse_ok']} prompt: {out['prompt_version']}")
+        print(f"price_ctx: {price:.2f} EUR")
+        print(DISCLAIMER)
+    return 0
 
 
 def main(argv=None):
@@ -96,6 +124,8 @@ def main(argv=None):
                   file=sys.stderr)
             parser.print_usage(sys.stderr)
             return 2
+        if args.backend == "llm":
+            return _main_llm(parser, args, price)
         try:
             run_dir = resolve_run_dir(args.model)
             vectorizer, model = load_artifacts(run_dir)

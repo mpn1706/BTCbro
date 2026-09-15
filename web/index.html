@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<title>BTC news signal — comparativa honesta</title>
+<style>:root{--bg:#111827;--card:#1f2937;--txt:#e5e7eb;--mut:#9ca3af;--up:#22c55e;--dn:#ef4444}
+body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--txt);max-width:1040px;margin:auto;padding:16px}
+h1{font-size:20px}h2{font-size:15px;color:var(--mut)}
+.card{background:var(--card);border-radius:10px;padding:12px;margin:10px 0}
+.banner{background:#713f12;padding:8px;border-radius:8px;font-size:13px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.kpi{background:var(--card);border-radius:10px;padding:10px}.kpi b{font-size:20px}
+table{border-collapse:collapse;font-size:13px}td,th{border:1px solid #374151;padding:4px 8px}
+canvas{width:100%;border:1px solid #374151;border-radius:8px;background:#0b1220;cursor:grab}
+input[type=number]{width:110px;background:#0b1220;color:var(--txt);border:1px solid #374151;border-radius:6px;padding:4px}
+.hint{color:var(--mut);font-size:12px}</style></head><body>
+<h1>BTC news signal <span class="hint">baseline vs LLM · test honesto · educativo, no asesoría</span></h1>
+<div class="banner">ft (LoRA): <b>pendiente</b> — requiere GPU. Sin curva inventada. Nada opera de verdad.</div>
+<div class="card"><label><input type="checkbox" id="tB" checked> baseline</label>
+<label><input type="checkbox" id="tL" checked> llm</label>
+<label>Monto EUR: <input id="amount" type="number" value="1000"></label>
+<span class="hint">rueda = zoom · arrastrar = mover · doble clic = reset</span></div>
+<div class="kpis" id="kpis"></div>
+<div class="card"><h2>Velas diarias BTC + señales (▲ buy / ▼ sell)</h2><canvas id="c1" width="960" height="340"></canvas></div>
+<div class="card"><h2>Capital en el tiempo (x monto)</h2><canvas id="c2" width="960" height="260"></canvas></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+<div class="card"><h2>Capital final</h2><table id="tab"></table></div>
+<div class="card"><h2>F1 por clase (test)</h2><table id="f1"></table></div>
+</div>
+<div class="card"><h2>Precedentes: ¿qué pasó con noticias parecidas?</h2>
+<p class="hint">Pegá un titular (o titular + cuerpo). Busco las 5 noticias del test más parecidas por
+vocabulario y te muestro qué dijo cada motor y qué pasó de verdad (etiqueta + retorno 24h).
+Para un veredicto en vivo de TU texto usá el CLI (los modelos viven ahí, no en el navegador).</p>
+<textarea id="q" rows="3" style="width:100%;background:#0b1220;color:var(--txt);border:1px solid #374151;border-radius:6px"></textarea><br>
+<button id="go" style="margin-top:6px">Buscar precedentes</button>
+<div id="prec" style="font-size:13px;margin-top:8px"></div>
+<p class="hint">En vivo: <code>btc-signal --title "TU TITULAR" --price 60000 --backend baseline|llm</code></p></div>
+<div class="card"><h2>Metodología</h2><p id="met" style="font-size:13px"></p></div>
+<script>
+let D=null,view=null;const C={baseline:"#60a5fa",llm:"#c084fc",HODL:"#4ade80"};
+fetch("data.json").then(r=>r.json()).then(d=>{D=d;view={a:0,b:d.days.length-1};draw();})
+.catch(e=>{document.getElementById("met").textContent="No pude cargar data.json (usá servidor local): "+e;});
+const $=id=>document.getElementById(id);
+function xr(i){const n=D.days.length,W=960,P=46;return P+(i-view.a)*(W-2*P)/Math.max(1e-9,view.b-view.a);}
+function vis(){const o=[];for(let i=Math.max(0,Math.floor(view.a));i<=Math.min(D.days.length-1,Math.ceil(view.b));i++)o.push(i);return o;}
+function draw(){if(!D)return;const amt=parseFloat($("amount").value)||1000,idx=vis(),n=D.days.length;
+let lo=1e18,hi=-1e18;idx.forEach(i=>{const c=D.ohlc[i];lo=Math.min(lo,c.l);hi=Math.max(hi,c.h);});
+const W=960,H1=340,H2=260,P=46,Y=v=>H1-30-(v-lo)/(hi-lo||1)*(H1-60);
+const g=$("c1").getContext("2d");g.clearRect(0,0,W,H1);g.font="11px sans-serif";
+idx.forEach(i=>{const c=D.ohlc[i],up=c.c>=c.o;g.strokeStyle=up?"#22c55e":"#ef4444";g.fillStyle=g.strokeStyle;
+g.beginPath();g.moveTo(xr(i),Y(c.h));g.lineTo(xr(i),Y(c.l));g.stroke();
+const w=Math.max(2,(W-2*P)/Math.max(1,idx.length)*0.5);
+g.fillRect(xr(i)-w/2,Math.min(Y(c.o),Y(c.c)),w,Math.max(2,Math.abs(Y(c.c)-Y(c.o))));});
+g.fillStyle="#9ca3af";[idx[0],idx[Math.floor(idx.length/2)],idx[idx.length-1]].forEach(i=>{if(i!==undefined)g.fillText(D.days[i],Math.min(xr(i),W-70),H1-8);});
+[["baseline","tB"],["llm","tL"]].forEach(([b,t])=>{if(!$(t).checked)return;g.fillStyle=C[b];g.font="bold 11px sans-serif";
+const sig=D.votes[b]||[];idx.forEach(i=>{const a=String(sig[i]||"hold").toUpperCase();
+if(a==="BUY")g.fillText("▲",xr(i)-5,Y(D.ohlc[i].h)-10);if(a==="SELL")g.fillText("▼",xr(i)-5,Y(D.ohlc[i].l)+18);});});
+const sc={HODL:D.curves_1_0.HODL.map(v=>v*amt),baseline:D.curves_1_0.baseline.map(v=>v*amt),llm:D.curves_1_0.llm.map(v=>v*amt)};
+let mx=0;Object.values(sc).forEach(cv=>idx.forEach(i=>mx=Math.max(mx,cv[i])));
+const e=$("c2").getContext("2d");e.clearRect(0,0,W,H2);const Y2=v=>H2-30-(v/(mx||1))*(H2-60);
+e.fillStyle="#9ca3af";e.font="11px sans-serif";e.fillText(amt.toFixed(0),4,Y2(amt)+4);e.fillText(mx.toFixed(0),4,Y2(mx)+4);
+Object.entries(sc).forEach(([b,cv])=>{if(b!=="HODL"&&!$(b==="baseline"?"tB":"tL").checked)return;
+e.strokeStyle=C[b];e.lineWidth=2;e.beginPath();let s=false;idx.forEach(i=>{const x=xr(i),y=Y2(cv[i]);s?e.lineTo(x,y):e.moveTo(x,y);s=true;});e.stroke();});
+[idx[0],idx[idx.length-1]].forEach(i=>{if(i!==undefined)e.fillText(D.days[i],Math.min(xr(i),W-70),H2-8);});
+const f=k=>D.curves_1_0[k][n-1]*amt;
+$("kpis").innerHTML=["HODL","baseline","llm"].map(b=>`<div class="kpi">${b}<br><b>€${f(b).toFixed(2)}</b><br><span class="hint">${(f(b)/amt).toFixed(2)}x</span></div>`).join("")
++`<div class="kpi">monto<br><b>€${amt.toFixed(2)}</b><br><span class="hint">parametrizable</span></div>`;
+let h="<tr><th>método</th><th>final EUR</th><th>múltiplo</th><th>F1</th></tr>";
+[["HODL",null],["baseline",D.meta.f1.baseline],["llm",D.meta.f1.llm]].forEach(([b,fv])=>{
+h+=`<tr><td>${b}</td><td>€${f(b).toFixed(2)}</td><td>${(f(b)/amt).toFixed(2)}x</td><td>${fv===null?"—":fv}</td></tr>`;});
+$("tab").innerHTML=h;
+const pc=D.meta.per_class||{};let f1="<tr><th>clase</th><th>baseline</th><th>llm</th></tr>";
+["buy","hold","sell"].forEach(k=>{f1+=`<tr><td>${k}</td><td>${(pc.baseline||{})[k]??"—"}</td><td>${(pc.llm||{})[k]??"—"}</td></tr>`;});
+$("f1").innerHTML=f1;
+$("met").textContent=`Ventana ${D.meta.window} · n=${D.meta.n_test} · ${D.meta.sampling||"test-once"} · sin fees · all-in. ${D.meta.ft_status}.`;}
+function zoom(f,cx){const cv=$("c1"),r=cv.getBoundingClientRect(),x=(cx-r.left)/r.width*960;
+const P=46,W=960,n=D.days.length;if(!D)return;
+const pos=view.a+(x-P)/(W-2*P)*(view.b-view.a);
+let na=pos-(pos-view.a)*f,nb=pos+(view.b-pos)*f;
+if(nb-na<10){const m=(na+nb)/2;na=m-5;nb=m+5;}if(nb-na>n-1){na=0;nb=n-1;}
+na=Math.max(0,na);nb=Math.min(n-1,nb);if(nb-na>=5){view={a:na,b:nb};draw();}}
+function pan(dx){const cv=$("c1"),r=cv.getBoundingClientRect(),W=960,P=46,n=D.days.length;
+const d=dx/r.width*W/(W-2*P)*(view.b-view.a);let na=view.a-d,nb=view.b-d;const s=nb-na;
+if(na<0){na=0;nb=s;}if(nb>n-1){nb=n-1;na=nb-s;}view={a:na,b:nb};draw();}
+["c1","c2"].forEach(id=>{const cv=$(id);let drag=null;
+cv.addEventListener("wheel",ev=>{ev.preventDefault();zoom(ev.deltaY>0?1.2:0.83,ev.clientX);},{passive:false});
+cv.addEventListener("mousedown",ev=>{drag=ev.clientX;cv.style.cursor="grabbing";});
+window.addEventListener("mouseup",()=>{drag=null;cv.style.cursor="grab";});
+window.addEventListener("mousemove",ev=>{if(drag!==null&&D){pan(ev.clientX-drag);drag=ev.clientX;}});
+cv.addEventListener("dblclick",()=>{if(D){view={a:0,b:D.days.length-1};draw();}});});
+function toks(t){return (t.toLowerCase().match(/[a-záéíóúñü]+/g)||[]).filter(w=>w.length>3);}
+function precSearch(){const q=new Set(toks($("q").value));if(!q.size)return;
+const scored=D.precedents.map((p,i)=>{const w=new Set(toks(p.t));let m=0;q.forEach(x=>{if(w.has(x))m++;});return{i,m};})
+.filter(o=>o.m>0).sort((a,b)=>b.m-a.m).slice(0,5);
+const badge=(v,ok)=>`<b style="color:${ok?"#4ade80":"#f87171"}">${v}</b>`;
+$("prec").innerHTML=scored.length?scored.map(o=>{const p=D.precedents[o.i];
+return `<p>“${p.t.slice(0,140)}…”<br>real: ${badge(p.y+" ("+(p.r*100).toFixed(1)+"%)",true)} · baseline: ${badge(p.b,p.b===p.y)} · llm: ${badge(p.l,p.l===p.y)} <span class="hint">(${o.m} palabras en común)</span></p>`;}).join("")
+:"<p class='hint'>Sin coincidencias en el test — probá con otras palabras o el CLI.</p>";}
+$("go").onclick=precSearch;
+$("amount").oninput=draw;$("tB").onchange=draw;$("tL").onchange=draw;
+</script></body></html>

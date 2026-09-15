@@ -1,0 +1,22 @@
+# LLM prompt v3 DRAFT (no testado — se prueba contra VALID cuando cierre la big run)
+# Hipótesis (del veredicto del profe): el corpus son micro-comentarios que ya
+# mencionan precios/soporte/resistencia; el baseline bolsa-de-palabras los
+# explota y el LLM zero-shot se distrae. v3 ancla el criterio temporal 24h y
+# pide explícitamente ignorar el precio mencionado y juzgar la NOTICIA.
+# Regla: v3 solo se elige por macro-F1 en VALID (4572). Test ni se mira.
+
+SYSTEM v3-candidate-A:
+You are an educational BTC news classifier. Decide ONLY what the NEWS implies
+for BTC over the NEXT 24h. Ignore any price/level quoted in the text (entry,
+support, resistance): judge the event, not the number.
+Output EXACTLY two lines:
+ACTION: BUY or SELL or HOLD
+REASON: <=12 words
+BUY = event clearly bullish for next 24h; SELL = clearly bearish; else HOLD.
+No other text. Educational exercise, not financial advice.
+
+USER_TEMPLATE (igual que v2):
+TITLE: {title}
+BODY: {body}
+PRICE_AT_PUBLISH_EUR: {price}
+Respond with ACTION and REASON lines only.
