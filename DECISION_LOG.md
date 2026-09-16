@@ -65,3 +65,16 @@ HODL 1.316 > EMB 1.17 > LLM 0.922 > baseline 0.89.
 Extractor (Qwen3-embeds + LogReg C=0.5, C elegido en val): test virgen n=1000
 macro-F1 0.368 vs baseline 0.336 en las mismas filas; web-sub 0.339 vs 0.316/0.283.
 Tercer método real en la web (emb); LoRA sigue pendiente de GPU.
+
+## D11 — Veredicto LoRA: colapso a sell, negativo honesto (2026-09-16)
+LoRA Qwen3-1.7B 4-bit nf4 (r=16, alpha=32, dropout 0.05, q/k/v/o,
+2 epochs, batch 4xaccum4, lr 2e-4, fp16, seed 42, greedy 30 tokens,
+T4 en Kaggle) sobre test-1000 virgen: macro-F1 **0.197**
+(999 sell + 1 buy, 0 hold; accuracy 0.415 ~= prior de sell).
+Mismas 1000 filas: baseline 0.336, extractor 0.368 (D10).
+Ranking: extractor 0.368 > baseline 0.336 > zero-shot 0.283
+(n=334, otra submuestra) > LoRA 0.197. Cero tuneo con test
+(hiperparámetros congelados antes de verlo). Incidente: primer CSV
+bajado trunco (965/1000, descarga a mitad de escritura); re-corridasolo inferencia, determinista, archivo final 1001 líneas verificado
+localmente (F1 local = Kaggle). Artefactos: cloud/kaggle_lora.ipynb,
+cloud/lora_*.jsonl, cloud/predictions_lora_test.csv, cloud/lora_compare.json.
