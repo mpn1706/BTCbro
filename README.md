@@ -40,7 +40,7 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1        # Windows
 pip install -e .                  # instala btc-signal
 pip install pytest                # si no lo tenés
-python -m pytest                  # 70+ tests (sin red, sin GPU)
+python -m pytest                  # 84 tests (sin red, sin GPU)
 ```
 
 CLI (baseline y LLM):
@@ -71,7 +71,7 @@ la guía dice cómo conseguirlos (`tools/real_data.md`).
 ```
 src/            # config, ingesta, dataset honesto, train, evaluate, cli,
                 # llm_backend (Qwen3 CPU), compare, backtest
-tests/          # 70+ tests espejo del contrato (incluye fixtures tiny)
+tests/          # 84 tests espejo del contrato (incluye fixtures tiny)
 web/            # index.html fijo + data.json generado (velas, backtest, precedentes)
 tools/          # export_web, corridas, spkes documentados, guías de datos
 prompts/        # prompts versionados del LLM (v2, v3 en duelo)
