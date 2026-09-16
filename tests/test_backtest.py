@@ -32,3 +32,46 @@ def test_export_has_precedents():
     d = json.load(open("web/data.json", encoding="utf-8"))
     assert len(d["precedents"]) == d["meta"]["n_test"] == 334
     assert set(d["precedents"][0]) == {"t", "y", "r", "b", "l"}
+
+
+def test_equity_defaults_reproduce_legacy_exact():
+    sigs = ["buy", "hold", "sell"]
+    closes = [100.0, 200.0, 50.0]
+    legacy = equity(sigs, closes, 1000.0)
+    explicit = equity(sigs, closes, 1000.0, 0.0, 1.0)
+    assert explicit == legacy
+    assert explicit["final"] == 500.0
+    assert explicit["curve"] == [1000.0, 2000.0, 500.0]
+
+
+def test_equity_fractional_buy_math():
+    r = equity(["buy", "hold"], [100.0, 200.0], 1000.0, 0.0, 0.5)
+    assert r["curve"] == [1000.0, 1500.0]
+    assert r["final"] == 1500.0
+
+
+def test_equity_fractional_sell_stairstep():
+    r = equity(["sell", "hold"], [100.0, 200.0], 0.0, 1.0, 0.5)
+    assert r["curve"] == [100.0, 150.0]
+    assert r["final"] == 150.0
+
+
+def test_equity_validation_errors():
+    with pytest.raises(ValueError):
+        equity(["hold"], [100.0], 1000.0, 0.0, 0.0)
+    with pytest.raises(ValueError):
+        equity(["hold"], [100.0], 1000.0, 0.0, 1.5)
+    with pytest.raises(ValueError):
+        equity(["hold"], [100.0], -1.0)
+    with pytest.raises(ValueError):
+        equity(["hold"], [100.0], 1000.0, -0.1)
+    with pytest.raises(ValueError):
+        equity(["hold"], [0.0], 1000.0)
+    with pytest.raises(ValueError):
+        equity(["hold"], [-5.0], 1000.0)
+
+
+def test_equity_hold_keeps_btc_initial():
+    r = equity(["hold", "hold"], [100.0, 200.0], 500.0, 1.0, 1.0)
+    assert r["curve"] == [600.0, 700.0]
+    assert r["final"] == 700.0

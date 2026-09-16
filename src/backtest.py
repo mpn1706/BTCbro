@@ -1,7 +1,8 @@
-"""Backtest educativo (matemática testeada; el JS de la web solo dibuja).
+"""Educational backtest (math tested; web JS only draws).
 
-Reglas all-in sin fees: BUY gasta toda la caja al cierre, SELL liquida todo al
-cierre, HOLD nada. HODL compra el primer día y mantiene. No es asesoría.
+Fractional rules without fees: BUY spends cash*trade_pct at close,
+SELL sells btc*trade_pct at close, HOLD does nothing. HODL buys day one
+and holds. Not financial advice.
 """
 
 from __future__ import annotations
@@ -10,24 +11,69 @@ HOLD = "hold"
 
 
 def daily_vote(rows: list[tuple[str, str]], days: list[str]) -> list[str]:
-    """Una señal por día (última gana); días sin noticia = hold."""
+    """One signal per day (last wins); days without news = hold."""
     last = {}
     for day, action in rows:
         last[day] = (action or HOLD).lower()
     return [last.get(d, HOLD) for d in days]
 
 
-def equity(signals: list[str], closes: list[float], amount: float) -> dict:
-    """Curva de capital normalizada a `amount`."""
-    cash, btc, curve = float(amount), 0.0, []
-    for sig, px in zip(signals, closes):
-        sig = (sig or HOLD).lower()
-        if sig == "buy" and cash > 0:
-            btc, cash = cash / px, 0.0
-        elif sig == "sell" and btc > 0:
-            cash, btc = btc * px, 0.0
+def equity(
+    signals: list[str],
+    closes: list[float],
+    amount: float,
+    initial_btc: float = 0.0,
+    trade_pct: float = 1.0,
+) -> dict:
+    """Absolute capital curve for custom initial capital and fractional size.
+
+    `amount` is the initial cash in EUR. The initial total is
+    `amount + initial_btc * closes[0]` (or `amount` when empty).
+    Defaults (0.0, 1.0) reproduce the legacy all-in behavior exactly.
+    """
+    # Fail fast on invalid inputs.
+    try:
+        cash = float(amount)
+    except (TypeError, ValueError):
+        raise ValueError("amount must be a number >= 0")
+    try:
+        btc = float(initial_btc)
+    except (TypeError, ValueError):
+        raise ValueError("initial_btc must be a number >= 0")
+    try:
+        pct = float(trade_pct)
+    except (TypeError, ValueError):
+        raise ValueError("trade_pct must be in (0, 1]")
+    if not 0.0 < pct <= 1.0:
+        raise ValueError("trade_pct must be in (0, 1]")
+    if cash < 0.0:
+        raise ValueError("amount must be >= 0")
+    if btc < 0.0:
+        raise ValueError("initial_btc must be >= 0")
+    prices: list[float] = []
+    for c in closes:
+        try:
+            px = float(c)
+        except (TypeError, ValueError):
+            raise ValueError("closes must contain numbers > 0")
+        if px <= 0.0:
+            raise ValueError("closes must contain numbers > 0")
+        prices.append(px)
+    if not prices:
+        return {"final": float(cash), "curve": []}
+    curve: list[float] = []
+    for sig, px in zip(signals, prices):
+        action = (sig or HOLD).lower()
+        if action == "buy" and cash > 0.0:
+            spend = cash * pct
+            btc += spend / px
+            cash *= 1.0 - pct
+        elif action == "sell" and btc > 0.0:
+            cash += btc * pct * px
+            btc *= 1.0 - pct
+        # HOLD / none / unknown signals keep positions unchanged.
         curve.append(cash + btc * px)
-    return {"final": curve[-1] if curve else float(amount), "curve": curve}
+    return {"final": curve[-1] if curve else float(cash), "curve": curve}
 
 
 def hodl(closes: list[float], amount: float) -> dict:
