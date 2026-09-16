@@ -1,23 +1,23 @@
 # Data Card — build dataset
-- raw_news_rows: 5
-- raw_price_rows: 6
-- kept_news_rows: 3
+- raw_news_rows: 11295
+- raw_price_rows: 5904
+- kept_news_rows: 11295
 - dropped_missing_fields: 0
 - duplicate_rate: 0.0
 - dropped_no_price: 0
-- dropped_no_forward: 2
-- purged_train_rows: 1
-- embargoed_rows: 1
-- news range: 2024-01-15 12:00:00+00:00 to 2024-01-21 08:00:00+00:00
-- price range: 2024-01-15 00:00:00+00:00 to 2024-01-20 00:00:00+00:00
+- dropped_no_forward: 0
+- purged_train_rows: 5
+- embargoed_rows: 9
+- news range: 2021-11-05 04:42:00+00:00 to 2024-09-12 00:00:00+00:00
+- price range: 2010-07-18 00:00:00+00:00 to 2026-09-15 00:00:00+00:00
 - flat_threshold: 0.005
 - embargo_days: 1
 - seed: 42
-- split boundaries: train_end=2024-01-17 (B1=2024-01-18 00:00:00+00:00), val_end=2024-01-19 (B2=2024-01-20 00:00:00+00:00)
-- purge cutoffs: 2024-01-17 00:00:00+00:00, 2024-01-19 00:00:00+00:00; embargo gaps: 1d -> cutoffs 2024-01-16 00:00:00+00:00, 2024-01-18 00:00:00+00:00
-- per-split counts: train=1, val=0, test=0
-- per-split label distribution: train={'buy': 1}, val={}, test={}
-- per-split ranges: train=[2024-01-15 12:00:00+00:00..2024-01-15 12:00:00+00:00], val=[None..None], test=[None..None]
-- sources: Kaggle crypto-news (allowlist) sha256=1326d6cbff1e98e6, Kraken XXBTZEUR sha256=e90f3f8fda90222b
+- split boundaries: train_end=2022-12-31 (B1=2023-01-01 00:00:00+00:00), val_end=2023-12-31 (B2=2024-01-01 00:00:00+00:00)
+- purge cutoffs: 2022-12-31 00:00:00+00:00, 2023-12-31 00:00:00+00:00; embargo gaps: 1d -> cutoffs 2022-12-30 00:00:00+00:00, 2023-12-30 00:00:00+00:00
+- per-split counts: train=5375, val=4572, test=1334
+- per-split label distribution: train={'sell': 2368, 'buy': 2036, 'hold': 971}, val={'buy': 1662, 'hold': 1511, 'sell': 1399}, test={'buy': 564, 'sell': 557, 'hold': 213}
+- per-split ranges: train=[2021-11-05 04:42:00+00:00..2022-12-29 17:38:00+00:00], val=[2023-01-01 06:03:45+00:00..2023-12-30 00:00:00+00:00], test=[2024-01-04 00:00:00+00:00..2024-09-12 00:00:00+00:00]
+- sources: Kaggle crypto-news (allowlist) sha256=d02ca450e3a3615e, Kraken XXBTZEUR sha256=0077568a1fab1322
 - versions: python=3.14.7, pandas=3.0.5, sklearn=1.9.1
 - rebuild command: python -m src.dataset --flat-threshold 0.005 --embargo-days 1 --seed 42

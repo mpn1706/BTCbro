@@ -152,7 +152,7 @@ def test_purge_plus_embargo_math():
         temporal_split(labeled, DatasetConfig(embargo_days=5))
 
 
-def test_random_split_forbidden():
+def test_random_split_forbidden(tmp_path):
     labeled = _news(["2023-06-01T12:00:00Z", "2024-06-01T12:00:00Z"])
     labeled["label"] = "hold"
     with pytest.raises(ValueError, match="[Cc]hronological|temporal"):
@@ -162,10 +162,11 @@ def test_random_split_forbidden():
             DatasetConfig(split_mode="stratified-shuffle"),
             news_df=labeled,
             prices_df=_prices(["2023-01-01"], [60000.0]),
+            output_card=str(tmp_path / "data_card.md"),
         )
 
 
-def test_rebuild_reproducible():
+def test_rebuild_reproducible(tmp_path):
     news_clean, _nr = clean_news(load_news_csv(FIXTURES / "news_tiny.csv"))
     prices_clean, _pr = clean_prices(
         pd.read_csv(FIXTURES / "prices_tiny.csv")
@@ -176,8 +177,10 @@ def test_rebuild_reproducible():
         train_end="2024-01-17",
         val_end="2024-01-19",
     )
-    t1, v1, s1, card1 = build_dataset(cfg, news_df=news_clean, prices_df=prices_clean)
-    t2, v2, s2, card2 = build_dataset(cfg, news_df=news_clean, prices_df=prices_clean)
+    t1, v1, s1, card1 = build_dataset(cfg, news_df=news_clean, prices_df=prices_clean,
+                                       output_card=str(tmp_path / "data_card1.md"))
+    t2, v2, s2, card2 = build_dataset(cfg, news_df=news_clean, prices_df=prices_clean,
+                                       output_card=str(tmp_path / "data_card2.md"))
     pd.testing.assert_frame_equal(t1.reset_index(drop=True), t2.reset_index(drop=True))
     pd.testing.assert_frame_equal(v1.reset_index(drop=True), v2.reset_index(drop=True))
     pd.testing.assert_frame_equal(s1.reset_index(drop=True), s2.reset_index(drop=True))
