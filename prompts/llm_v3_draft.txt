@@ -3,6 +3,7 @@
 # mencionan precios/soporte/resistencia; el baseline bolsa-de-palabras los
 # explota y el LLM zero-shot se distrae. v3 ancla el criterio temporal 24h y
 # pide explícitamente ignorar el precio mencionado y juzgar la NOTICIA.
+# Canónico en código: src/llm_backend.py SYSTEMS["v3"] (este archivo es el borrador histórico).
 # Regla: v3 solo se elige por macro-F1 en VALID (4572). Test ni se mira.
 
 SYSTEM v3-candidate-A:

@@ -10,6 +10,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+# Canonical math lives in src/backtest (tested there too); these are thin
+# aliases so the two modules can never drift apart.
+from src.backtest import equity as simulate  # noqa: F401
+from src.backtest import hodl  # noqa: F401
+
 HOLD = "hold"
 
 
@@ -19,27 +24,6 @@ def daily_signals(rows: list[tuple[str, str]]) -> dict[str, str]:
     for day, action in rows:
         out[day] = (action or HOLD).lower()
     return out
-
-
-def simulate(signals: list[str], closes: list[float], amount: float) -> dict:
-    """All-in educational simulator, no fees: BUY spends all cash at close,
-    SELL liquidates all BTC at close, HOLD nothing. Returns final + curve."""
-    cash, btc, curve = float(amount), 0.0, []
-    for sig, px in zip(signals, closes):
-        if sig == "buy" and cash > 0:
-            btc, cash = cash / px, 0.0
-        elif sig == "sell" and btc > 0:
-            cash, btc = btc * px, 0.0
-        curve.append(cash + btc * px)
-    return {"final": curve[-1] if curve else float(amount), "curve": curve}
-
-
-def hodl(closes: list[float], amount: float) -> dict:
-    """Buy-and-hold reference: all-in at first close."""
-    if not closes:
-        return {"final": float(amount), "curve": []}
-    n = float(amount) / closes[0]
-    return {"final": n * closes[-1], "curve": [n * px for px in closes]}
 
 
 _CSS = ("body{font-family:system-ui,sans-serif;max-width:1000px;margin:auto;padding:16px}"
