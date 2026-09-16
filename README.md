@@ -1,13 +1,14 @@
 # ₿ BTC News Signal + LLM directo (educativo)
 
 Modelo local que analiza noticias de Bitcoin y sugiere **comprar**, **vender** o
-**mantener**, con web comparativa de 3 métodos, backtest y simulador.
+**mantener**, con web comparativa de 4 métodos, backtest y simulador.
 Proyecto de curso de *vibe coding*: el objetivo es demostrar un proceso de ML
 honesto y reproducible, no lograr un modelo de trading real.
 
 > ⚠️ **Aviso**: proyecto educativo. No es asesoramiento financiero. Nada opera
 > de verdad. En ventanas alcistas, HODL le gana a tradear señales flojas
-> (la propia web lo muestra: 1.32x > 0.92x > 0.89x).
+> (la propia web lo muestra: HODL 1.32x > EMB 1.17x > LLM 0.92x > baseline 0.89x;
+> el LoRA colapsado queda en cash 1.00x).
 
 ## Qué hace
 
@@ -16,7 +17,8 @@ honesto y reproducible, no lograr un modelo de trading real.
    retorno 24h (`ret_24h` vs umbral `flat_threshold`).
 3. Entrena un baseline TF-IDF + Regresión Logística (scikit-learn, CPU).
 4. Corre un LLM local (Qwen3-1.7B, llama.cpp, CPU) como clasificador directo.
-5. Compara ambos en el mismo split honesto y lo muestra en la web con velas,
+5. Suma un extractor Qwen-embeds + LogReg y un fine-tune LoRA (Qwen3-1.7B, GPU en Kaggle).
+6. Compara los 4 en el mismo split honesto y lo muestra en la web con velas,
    señales, backtest, simulador de monto y testigo HODL.
 
 ## Regla anti-trampa (lo que vale del proyecto)
@@ -27,9 +29,21 @@ per-class + macro-F1 + matriz 3×3). Un negativo honesto > un positivo con leaka
 
 ## Resultado
 
-Test grande (1334 → submuestra 334, thr 0.005): baseline macro-F1 **0.316** vs
-LLM **0.283** → gana el baseline; el LLM zero-shot queda bajo el azar (0.33).
-Ver `data/interim/big_compare/compare.json` y `DECISION_LOG.md`.
+Test grande (1334; LoRA en complemento disjunto de 1000, thr 0.005):
+
+| Método | n | macro-F1 | Capital 1.0 |
+|---|---|---|---|
+| Extractor Qwen-embeds + LogReg | 1000 | 0.368 | 1.17x |
+| Baseline TF-IDF + LogReg | 1000 | 0.336 | 0.89x |
+| LLM Qwen3 zero-shot | 334 | 0.283 | 0.92x |
+| LoRA Qwen3 (r=16, 2 épocas, T4) | 1000 | 0.197 | 1.00x |
+| HODL (testigo) | — | — | 1.32x |
+
+En la submuestra web-334 el F1 es 0.316 / 0.283 / 0.339 (ver `web/data.json`
+`meta.n`). El extractor gana entre los modelos, pero HODL le gana a todos:
+con señales flojas, tradear pierde contra no hacer nada. El LoRA colapsó a
+predecir casi todo sell — negativo honesto (D11). Ver
+`cloud/lora_compare.json` y `DECISION_LOG.md`.
 
 ## Cómo correrlo en tu computadora
 
@@ -73,7 +87,7 @@ src/            # config, ingesta, dataset honesto, train, evaluate, cli,
                 # llm_backend (Qwen3 CPU), compare, backtest
 tests/          # 84 tests espejo del contrato (incluye fixtures tiny)
 web/            # index.html fijo + data.json generado (velas, backtest, precedentes)
-tools/          # export_web, corridas, spkes documentados, guías de datos
+tools/          # export_web, corridas, spikes documentados, guías de datos
 prompts/        # prompts versionados del LLM (v2, v3 en duelo)
 docs/           # guia-usuario.md + DECISION_LOG.md en raíz
 openspec/       # artefactos SDD (proposal/spec/design/tasks/verify)
