@@ -46,5 +46,5 @@ Cuando exista el adapter LoRA, se agrega la 3ª serie acá.
   Gap Mar-Sep 2024 tapado con serie belbino (solo fechas faltantes).
   Precios mezclan USD+EUR en retornos (solo afecta display).
 - Veredicto final: baseline macro-F1 0.316 vs LLM 0.283 (333/334 parseadas).
-  Capital 1.0: HODL 1.32 > baseline 0.92 > LLM 0.89.
+  Capital 1.0: HODL 1.32 > EMB 1.17 > LLM 0.92 > baseline 0.89 (el extractor es el único que gana plata sin ser HODL).
 - Sin fees, all-in. Micro-comentarios con precios citados favorecen al baseline.

@@ -51,8 +51,11 @@ def main() -> None:
             for d in days if d in pxd.index]
     closes = [c["c"] for c in ohlc]
     day_of = [pd.to_datetime(t, utc=True).strftime("%Y-%m-%d") for t in te["published_at"]]
+    emb_pred = pd.read_csv("data/interim/embeddings/pred_web334.csv").iloc[:, 0].tolist()
+    assert len(emb_pred) == len(te), "emb preds must align to web subsample"
     votes = {"baseline": daily_vote(list(zip(day_of, base_pred)), days),
-             "llm": daily_vote(list(zip(day_of, llm_pred)), days)}
+             "llm": daily_vote(list(zip(day_of, llm_pred)), days),
+             "emb": daily_vote(list(zip(day_of, emb_pred)), days)}
     curves = {b: [r6(v) for v in equity(votes[b], closes, 1.0)["curve"]] for b in votes}
     curves["HODL"] = [r6(v) for v in hodl(closes, 1.0)["curve"]]
     y_test = te["label"].tolist()
@@ -60,6 +63,7 @@ def main() -> None:
     for name, preds in (("baseline", base_pred), ("llm", llm_pred)):
         rep = evaluate_predictions(y_test, preds)
         per_class[name] = {k: round(v["f1"], 3) for k, v in rep["per_class"].items()}
+    emb_rep = evaluate_predictions(y_test, emb_pred)
     comp = build_compare_report(te["label"].tolist(), base_pred, llm_pred,
                                 split_hash="big-imadallal-thr0005-emb1",
                                 sampling=f"systematic_step_{STEP} (n={len(te)})",
@@ -75,15 +79,16 @@ def main() -> None:
                      "prompt_version": PROMPT_VERSION,
                      "ft_status": "pendiente (requiere GPU)",
                      "f1": {"baseline": comp["baseline"]["macro_f1"],
-                            "llm": comp["llm"]["macro_f1"]},
-                     "per_class": per_class,
+                            "llm": comp["llm"]["macro_f1"],
+                            "emb": round(emb_rep["macro_f1"], 3)},
+                     "per_class": {**per_class,
+                                      "emb": {k: round(v["f1"], 3) for k, v in emb_rep["per_class"].items()}},
                      "sampling": comp["sampling"]},
             "days": days, "ohlc": ohlc, "votes": votes, "curves_1_0": curves}
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(data, indent=1, sort_keys=True), encoding="utf-8")
-    h, l, b = curves["HODL"][-1], curves["baseline"][-1], curves["llm"][-1]
-    print(f"HODL {h:.2f} > baseline {b:.2f} > LLM {l:.2f} (capital 1.0)" if h >= b >= l
-          else f"HODL {h:.2f} / baseline {b:.2f} / LLM {l:.2f} (capital 1.0)")
+    h, l, b, e = (curves[k][-1] for k in ("HODL", "llm", "baseline", "emb"))
+    print(f"HODL {h:.2f} / baseline {b:.2f} / LLM {l:.2f} / EMB {e:.2f} (capital 1.0)")
     print("wrote", OUT)
 
 

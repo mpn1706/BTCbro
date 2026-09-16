@@ -57,3 +57,11 @@ Baseline macro-F1 0.316 vs LLM 0.283 → gana baseline, confirma al profe
 baseline 0.92 > LLM 0.89. Incidente encoding Windows (charmap 0x9d) fijado con
 utf-8/errors=replace; 1 abstención honesta por output roto. Web final en
 web/data.json (submuestra documentada). Ver data/interim/big_compare/compare.json.
+
+## D10 — Corrección de etiqueta + veredicto extractor (2026-09-16)
+La línea de consola del export etiquetaba baseline/LLM cruzados en capital
+(solo el print; tablas/JS siempre por clave). Valores reales web-sub:
+HODL 1.316 > EMB 1.17 > LLM 0.922 > baseline 0.89.
+Extractor (Qwen3-embeds + LogReg C=0.5, C elegido en val): test virgen n=1000
+macro-F1 0.368 vs baseline 0.336 en las mismas filas; web-sub 0.339 vs 0.316/0.283.
+Tercer método real en la web (emb); LoRA sigue pendiente de GPU.

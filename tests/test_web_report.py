@@ -59,3 +59,13 @@ def test_index_has_side_by_side_tables_and_precedents():
     html = Path("web/index.html").read_text(encoding="utf-8")
     assert "grid-template-columns:1fr 1fr" in html
     assert "Precedentes" in html and "precSearch" in html and "btc-signal" in html
+
+
+def test_index_covers_emb_series():
+    from pathlib import Path
+    import json
+    html = Path("web/index.html").read_text(encoding="utf-8")
+    assert 'id="tE"' in html
+    d = json.load(open("web/data.json", encoding="utf-8"))
+    assert set(d["votes"]) == {"baseline", "llm", "emb"}
+    assert d["meta"]["f1"]["emb"] > d["meta"]["f1"]["llm"]

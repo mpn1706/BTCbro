@@ -34,8 +34,8 @@ Ver `data/interim/big_compare/compare.json` y `DECISION_LOG.md`.
 ## Cómo correrlo en tu computadora
 
 ```bash
-git clone https://github.com/mpn1706/btc-inference.git
-cd btc-inference
+git clone https://github.com/mpn1706/BTCbro.git
+cd BTCbro
 python -m venv .venv
 .venv\Scripts\Activate.ps1        # Windows
 pip install -e .                  # instala btc-signal

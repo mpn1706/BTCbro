@@ -7,7 +7,7 @@ data/raw/
 data/clean/
 data/proc/
 data/interim/*.parquet
-data/interim/*.csv
+data/interim/**/*.csv
 
 # Model binaries (only .gitkeep + card/metrics via run folders, no blind weights)
 models/*
@@ -24,3 +24,6 @@ tools/llama.cpp/
 tools/__pycache__/
 logs/
 data/interim/*.jsonl
+data/interim/**/*.npz
+data/interim/**/*.npy
+data/interim/**/*.pkl

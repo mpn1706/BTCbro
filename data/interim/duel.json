@@ -1,0 +1,15 @@
+{
+ "rule": "promote iff F1(v3) > F1(v2) on same val subsample",
+ "n_val": 229,
+ "v2": {
+  "macro_f1": 0.389,
+  "parse_ok": "219/229",
+  "mean_wall_s": 5.5
+ },
+ "v3": {
+  "macro_f1": 0.325,
+  "parse_ok": "219/229",
+  "mean_wall_s": 6.4
+ },
+ "verdict": "HOLD v2"
+}
