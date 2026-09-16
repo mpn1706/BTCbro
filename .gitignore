@@ -27,3 +27,8 @@ data/interim/*.jsonl
 data/interim/**/*.npz
 data/interim/**/*.npy
 data/interim/**/*.pkl
+
+# Build artifacts
+*.egg-info/
+build/
+dist/
