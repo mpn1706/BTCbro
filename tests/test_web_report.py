@@ -50,7 +50,7 @@ def test_index_has_zoom_cards_f1_and_disclaimer():
     from pathlib import Path
     html = Path("web/index.html").read_text(encoding="utf-8")
     for kw in ("wheel", "dblclick", "kpis", 'id="f1"', "data.json",
-               "ft (LoRA)", "pendiente", "asesor"):
+               "ft (LoRA)", "completado", "asesor"):
         assert kw in html, f"index no trae: {kw}"
 
 
@@ -66,6 +66,9 @@ def test_index_covers_emb_series():
     import json
     html = Path("web/index.html").read_text(encoding="utf-8")
     assert 'id="tE"' in html
+    assert 'id="tO"' in html
     d = json.load(open("web/data.json", encoding="utf-8"))
-    assert set(d["votes"]) == {"baseline", "llm", "emb"}
+    assert set(d["votes"]) == {"baseline", "llm", "emb", "lora"}
     assert d["meta"]["f1"]["emb"] > d["meta"]["f1"]["llm"]
+    assert d["meta"]["n"]["lora"] == 1000
+    assert "disjoint" in d["meta"]["lora_sampling"]
